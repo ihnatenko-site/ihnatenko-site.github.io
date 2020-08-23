@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>WonderfulBarbershop</title>
+</head>
+<body>
+
+<!-- SPRITE -->
+<svg style="display: none">
+    <symbol id="instagram" viewBox="0 0 169.063 169.063">
+        <g>
+            <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+                c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+                c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+                c17.455,0,31.656,14.201,31.656,31.655V122.407z"/>
+            <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+                C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+                c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"/>
+            <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+                c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+                C135.661,29.421,132.821,28.251,129.921,28.251z"/>
+        </g>
+    </symbol>
+    <symbol id="facebook" viewBox="0 0 512 512">
+        <path d="m452 0h-392c-33.085938 0-60 26.914062-60 60v392c0 33.085938 26.914062 60 60 60h392c33.085938 0 60-26.914062 60-60v-392c0-33.085938-26.914062-60-60-60zm20 452c0 11.027344-8.972656 20-20 20h-118v-146h64.027344l7.460937-62h-71.488281v-67c0-17.101562 12.898438-30 30-30h45v-58c-11.84375-1.671875-34.691406-4-45-4-23.324219 0-46.703125 9.839844-64.140625 26.992188-17.964844 17.671874-27.859375 40.820312-27.859375 65.183593v66.824219h-65v62h65v146h-212c-11.027344 0-20-8.972656-20-20v-392c0-11.027344 8.972656-20 20-20h392c11.027344 0 20 8.972656 20 20zm0 0"/>
+    </symbol>
+    <symbol id="youtube" viewBox="0 0 512 512">
+        <path d="m224.113281 303.960938 83.273438-47.960938-83.273438-47.960938zm0 0"/><path d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm159.960938 256.261719s0 51.917969-6.585938 76.953125c-3.691406 13.703125-14.496094 24.507812-28.199219 28.195312-25.035156 6.589844-125.175781 6.589844-125.175781 6.589844s-99.878906 0-125.175781-6.851562c-13.703125-3.6875-24.507813-14.496094-28.199219-28.199219-6.589844-24.769531-6.589844-76.949219-6.589844-76.949219s0-51.914062 6.589844-76.949219c3.6875-13.703125 14.757812-24.773437 28.199219-28.460937 25.035156-6.589844 125.175781-6.589844 125.175781-6.589844s100.140625 0 125.175781 6.851562c13.703125 3.6875 24.507813 14.496094 28.199219 28.199219 6.851562 25.035157 6.585938 77.210938 6.585938 77.210938zm0 0"/>
+    </symbol>
+    <symbol id="call" viewBox="0 0 512 512">
+        <g>
+            <path d="M256,0C114.624,0,0,114.624,0,256s114.624,256,256,256s256-114.624,256-256S397.376,0,256,0z M384,400
+                c-149.984,0-272-122.016-272-272c0-8.832,7.168-16,16-16h59.072c8.832,0,16,7.168,16,16c0,27.648,6.016,53.984,17.888,78.24
+                c1.888,3.84,2.144,8.224,0.736,12.256c-1.376,4.032-4.32,7.328-8.16,9.184l-23.872,11.52
+                c19.872,34.592,48.544,63.296,83.104,83.104l11.52-23.84c1.856-3.84,5.152-6.752,9.184-8.16c4.032-1.376,8.448-1.12,12.256,0.736
+                c24.32,11.872,50.624,17.888,78.24,17.888c8.832,0,16,7.168,16,16V384H400C400,392.832,392.832,400,384,400z"/>
+        </g>
+    </symbol>
+</svg>
+
+<header class="header">
+    <div class="container">
+        <nav class="nav">
+           <a href="#" class="nav__link">Servizi</a>
+           <a href="#" class="nav__link">Prenotazione</a>
+           <a href="#" class="nav__link">Storia</a>
+           <a href="#" class="nav__link">Galeria</a>
+           <a href="#" class="nav__link">
+               <img src="/img/logo wonderful.png" alt="barbershop logo" class="nav__logo">
+           </a>
+           <a href="#" class="nav__link">Recensioni</a>
+           <a href="#" class="nav__link">Contatti</a>
+           <a href="#" class="nav__link">Mappa</a>
+           <a href="#" class="nav__link">Orario</a>
+        </nav>
+    </div>
+</header>
+
+<section class="intro">
+    <div class="container">
+        <h1 class="intro__title">
+            il tuo taglio perfetto
+        </h1>
+        <button class="btn" type="button">prenotare</button>
+    </div>
+</section>
+
+<section class="servizi">
+    <div class="container">
+        <h2 class="servizi__title">Servizi</h2>
+        <div class="servizi-slider">
+            <div class="servizi-slider__item">
+                <div class="servizi__img">
+                    <img src="/img/servizi/4.jpg" alt="sevizi photo" class="servizi__photo">
+                </div>
+                <div class="servisi__description">
+                    <div class="servizi__name">Taglio  “hipster”</div>
+                    <div class="servizi__text">Est mainstream and trendy hipster haircut and hairstyles for men's, boys and guys in 2020. Discover Hipster Haircuts with images to inspire a new hip look.</div>
+                </div>
+            </div>
+            <div class="slider__nav">
+                <button class="btn btn--prev" type="button"></button>
+                <button class="btn btn--next" type="button"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="team">
+    <div class="container">
+        <h2 class="team__title">Prenotazione</h2>
+        <div class="team__inner">
+            <div class="team__item">
+                <img src="/img/team/1.png" alt="people team photo" class="team__photo">
+                <div class="team_name">Raffaele Vigliotta</div>
+                <div class="team_proffesion">Barbiere del primo ordine. </div>
+                <div class="team_description">Fondatore e una brava persona.
+                    Specializzato in tagli di capelli e coloranti. Tagli di capelli e coloranti.
+                </div>
+            </div>
+
+            <div class="team__item">
+                <img src="/img/team/2.png" alt="people team photo" class="team__photo">
+                <div class="team_name">Antonio Banderas</div>
+                <div class="team_proffesion">Barbiere di secondo ordine.  </div>
+                <div class="team_description">Specializzato in cura della barba e arricciatura dei capelli
+                </div>
+            </div>
+        </div>
+        <button class="btn btn--right" type="button">prenotare</button>
+    </div>
+</section>
+
+<section class="storia">
+
+    <div class="container">
+        <h2 class="storia__title">Storia</h2>
+        <div class="storia__inner">
+
+            <div class="storia__description">
+                <div class="storia__description-column">
+                    <div class="storia__description-title">Chi Siamo?</div>
+                    <div class="storia__description-text">The main purpose of your About Us page is to give your
+                        visitors a glimpse into who you are as a person or a business (or sometimes both).
+                        As users discover your brand, they need to distinguish what sets</div>
+                </div>
+                <div class="storia__description-column">
+                    <div class="storia__description-text">
+                        <p>Us page is to give your visitors a glimpse into who you are as a person or a business
+                            (or sometimes both).</p>
+                        Your visitors a glimpse into who you are as a person or a business (or sometimes both)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="galeria">
+    <div class="container">
+        <h2 class="galeria__title">Galeria</h2>
+        <div class="galeria__inner">
+
+            <div class="galeria__item first">
+                <img src="/img/galeria/1.jpg" alt="" class="galeria__img">
+                <div class="galeria__item-text">
+                    <h3 class="galeria__item-title">Oure Routine</h3>
+                    <div class="galeria__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam </div>
+                </div>
+            </div>
+            <div class="galeria__item second">
+                <div class="galeria__item-text top">
+                    <h3 class="galeria__item-title">Hipster</h3>
+                    <div class="galeria__description">Lorem  mollit non deserunt ullamco est sit aliqua dolor do amet sint. </div>
+                </div>
+                <img src="/img/galeria/2.jpg" alt="" class="galeria__img bottom">
+            </div>
+            <div class="galeria__item third">
+                <img src="/img/galeria/3.jpg" alt="" class="galeria__img">
+            </div>
+            <div class="galeria__item fourth">
+                <img src="/img/galeria/4.jpg" alt="" class="galeria__img">
+                <div class="galeria__item-text">
+                    <h3 class="galeria__item-title">Shaving</h3>
+                    <div class="galeria__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam </div>
+                </div>
+            </div>
+            <div class="galeria__item fifth">
+                <img src="/img/galeria/5.jpg" alt="" class="galeria__img">
+            </div>
+            <div class="galeria__item galeria__item--btn sixth">
+                <div class="show-more">show more</div> 
+            </div>
+
+        </div> 
+    </div>
+</section>
+
+<section class="reviews">
+    <div class="container">
+        <h2 class="reviews__title">Recensioni</h2>
+        <div class="reviews__inner">
+
+            <div class="reviews__item">
+
+                <div class="reviews__item-header">
+                    <img src="/img/reviews/1.jpg" alt="" class="reviewv__photo">
+                    <div class="reviews__info">
+                        <div class="reviews__name">Dianne Russell</div>
+                        <img src="/img/reviews/rating5.png" alt="" class="reviews__rating">
+                        <div class="reviews__date">20.08.2020</div>
+                    </div>
+                </div>
+                <div class="reviews__item-text">
+                    <h2 class="reviews__item-title">Il mio taglio migliore!!!</h2>
+                    <div class="reviews__item-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        Minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. )))))</div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item-header">
+                    <img src="/img/reviews/1.jpg" alt="" class="reviewv__photo">
+                    <div class="reviews__info">
+                        <div class="reviews__name">Dianne Russell</div>
+                        <img src="/img/reviews/rating5.png" alt="" class="reviews__rating">
+                        <div class="reviews__date">20.08.2020</div>
+                    </div>
+                </div>
+                <div class="reviews__item-text">
+                    <h2 class="reviews__item-title">Il mio taglio migliore!!!</h2>
+                    <div class="reviews__item-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        Minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. )))))</div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item-header">
+                    <img src="/img/reviews/1.jpg" alt="" class="reviewv__photo">
+                    <div class="reviews__info">
+                        <div class="reviews__name">Dianne Russell</div>
+                        <img src="/img/reviews/rating5.png" alt="" class="reviews__rating">
+                        <div class="reviews__date">20.08.2020</div>
+                    </div>
+                </div>
+                <div class="reviews__item-text">
+                    <h2 class="reviews__item-title">Il mio taglio migliore!!!</h2>
+                    <div class="reviews__item-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        Minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. )))))</div>
+                </div>
+            </div>
+
+            <div class="reviews__item">
+                <div class="reviews__item-header">
+                    <img src="/img/reviews/1.jpg" alt="" class="reviewv__photo">
+                    <div class="reviews__info">
+                        <div class="reviews__name">Dianne Russell</div>
+                        <img src="/img/reviews/rating5.png" alt="" class="reviews__rating">
+                        <div class="reviews__date">20.08.2020</div>
+                    </div>
+                </div>
+                <div class="reviews__item-text">
+                    <h2 class="reviews__item-title">Il mio taglio migliore!!!</h2>
+                    <div class="reviews__item-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        Minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. )))))</div>
+                </div>
+            </div>
+
+            
+            <button class="reviews__btn btn btn--prev" type="button"></button>
+            <button class="reviews__btn btn btn--next" type="button"></button>
+      
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+        <h2 class="contact__title">Contatti</h2>
+        <div class="contact__inner">
+
+            <div class="contact__info">
+                <div class="contact__tel">
+                    <div class="contact__tel-title">Per info e prenotazione:</div>
+                    <a class="contact__number" href="tel:3389785619">
+                        <span>3389785619</span>
+                        <svg class="social__icon">
+                            <use xlink:href="#call"></use>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="contact__adress">
+                    <div class="contact__adress-title">Siamo qui:</div>
+                    <address class="contact__adress-name">Via Matilde Serao, 305, Maddaloni (CE)</address>
+                </div>
+
+                <div class="contact__social">
+                    <div class="contact__social-title">Siamo su social:</div>
+                    <div class="social__nav">
+                        <a href="https://www.instagram.com/wonderfulbarbershop/" class="social__link" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/Wonderful-Barber-Shop-261100764435770/" class="social__link" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCUxN-pMHGYiYP0HLi-Pe_Qg" class="social__link" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#youtube"></use>
+                            </svg>
+                        </a>
+                       
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="contact__map">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1064.0528504831905!2d14.37843943086779!3d41.034095064013066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x133a53964c9d3fd9%3A0xabcaa93d5f940977!2sWonderful%20Barbershop!5e0!3m2!1sru!2sua!4v1598093575183!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__ineer">
+            <img src="/img/footer_logo.png" alt="" class="footer__logo">
+          
+            <div class="footer__nav-col">
+                <a href="#" class="footer__link">Servizi</a>
+                <a href="#" class="footer__link">Prenotazione</a>
+                <a href="#" class="footer__link">Storia</a>
+                <a href="#" class="footer__link">Galeria</a>
+            </div>
+            <div class="footer__nav-col">
+                <a href="#" class="footer__link">Recensioni</a>
+                <a href="#" class="footer__link">Contatti</a>
+                <a href="#" class="footer__link">Mappa</a>
+                <a href="#" class="footer__link">Orario</a>
+            </div>
+    
+        </div>
+        
+    </div>
+    <div class="footer-orange-row"></div>
+</footer>
+
+
+</body>
+</html>
