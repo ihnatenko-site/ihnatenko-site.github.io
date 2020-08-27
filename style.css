@@ -312,7 +312,7 @@ section {
 }
 
 .storia__description {
-    width: 100%;
+    width: 90%;
     max-width: 1180px;
     padding: 55px 100px;
     display: flex;
@@ -636,7 +636,7 @@ svg #call {
 
 /* FOOTER */
 .footer {
-    margin-top: -270px;
+    margin-top: -265px;
     background-color: #000000;
 }
 
@@ -704,5 +704,85 @@ svg #call {
 
 
 @media (max-width: 1199.98px) {
+    h2 {
+        font-size: 33px;
+    }
+    .btn {
+        margin: 0 auto;
+    }
 
+    .intro__inner {
+        text-align: center;
+    }
+
+
+    .team__item {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .team__item:nth-child(1) {
+        margin-bottom: 250px;
+    }
+    .team__item:nth-child(2) {
+        margin-bottom: 50px;
+    }
+
+
+    .contact__info {
+        padding-left: 0;
+        margin: 0 auto 50px;
+    }
+    .contact__map {
+        margin: 0 auto;
+    }
+
+
+    .reviews__btn {
+        margin-top: 10px;
+        top: 110%;
+    }
+    .reviews__btn.btn--next {
+        right: 44%;
+    }
+    .reviews__btn.btn--prev {
+        left: 44%;
+    }
+
+    .reviews__item:nth-child(4) {
+        display: none;
+    }
+    .reviews__controls {
+        margin-top: 20px;
+    }
+
+    .storia__description-text {
+        font-size: 21px;
+    }
+
+    .contact__info {
+        width: 51%;
+        margin-bottom: 30px;
+    }
+    .contact__adress {
+        margin-bottom: 15px;
+    }
+    .contact__number {
+        font-size: 43px;
+    }
+    .social__icon {
+        margin-right: 30px;
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+    .footer {
+        margin-top: -115px;
+    }
+    .footer__ineer {
+        margin: 0 auto;
+        padding-right: 0;
+        padding-bottom: 60px;
+    }
 }
