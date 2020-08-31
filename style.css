@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
+    margin-top: 80px;
     font-family: 'Russo One', sans-serif;
     font-size: 35px;
     font-weight: normal;
@@ -24,10 +25,6 @@ body {
     font-size: 24px;
     line-height: normal;
     color: #000;
-}
-
-section {
-    padding-top: 80px;
 }
 
 .container {
@@ -178,14 +175,23 @@ section {
     text-transform: capitalize;
 }
 
-/* servizi */
+.intro__logo {
+    display: none;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+}
 
+/* servizi */
 .servizi__title {
     margin-bottom: 28px;
 }
 
 .servizi-slider__item {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .servisi__description {
@@ -296,7 +302,7 @@ section {
 /* STORIA */
 .storia {
     position: relative;
-    height: 755px;
+    height: 670px;
 }
 
 .storia__inner {
@@ -306,7 +312,7 @@ section {
    background-size: cover;
 
    position: absolute;
-   top: 145px;
+   top: 60px;
    left: 50%;
    transform: translateX(-50%);
 }
@@ -685,27 +691,11 @@ svg #call {
 
 
 
-
 /* MEDIA */
-
-@media (max-width: 575.98px) {
-
-}
-
-
-@media (max-width: 767.98px) {
-
-}
-
-
-@media (max-width: 991.98px) {
-
-}
-
 
 @media (max-width: 1199.98px) {
     h2 {
-        font-size: 33px;
+        font-size: 30px;
     }
     .btn {
         margin: 0 auto;
@@ -715,6 +705,9 @@ svg #call {
         text-align: center;
     }
 
+    .nav__link {
+        font-size: 18px;
+    }
 
     .team__item {
         margin: 0 auto;
@@ -786,3 +779,74 @@ svg #call {
         padding-bottom: 60px;
     }
 }
+
+
+
+
+@media (max-width: 991.98px) {
+    .header {
+        height: 50px;
+    }
+    .nav {
+        display: none;
+    }
+
+    .intro {
+        height: 100vh;
+    }
+    .intro__logo {
+        display: inline-block;
+    }
+
+    .servizi__img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .servisi__description {
+        width: 51%;
+        padding-left: 0;
+    }
+    .servizi__name {
+        margin-bottom: 17px;
+        font-size: 23px;
+    }
+    .servizi__text {
+        font-size: 19px;
+    }
+
+    .storia {
+        height: 550px;
+    }
+    .storia__inner {
+        height: 370px;
+    }
+    .storia__description {
+        padding: 45px 25px
+    }
+    .storia__description-title {
+        font-size: 22px;
+    }
+    .storia__description-text {
+        font-size: 18px;
+    }
+
+
+    .galeria__item.first,
+    .galeria__item.second {
+        width: 50%;
+    }
+
+    .galeria__item.third,
+    .galeria__item.fifth {
+        width: 100%;
+    }
+
+@media (max-width: 767.98px) {
+
+}
+
+@media (max-width: 575.98px) {
+
+}
+
+
