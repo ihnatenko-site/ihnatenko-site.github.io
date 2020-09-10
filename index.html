@@ -42,9 +42,9 @@
     </symbol>
 </svg>
 
-<header class="header">
+<header class="header  ">
     <div class="container">
-        <nav class="nav">
+        <nav class="nav openNav">
            <a href="#" class="nav__link">Servizi</a>
            <a href="#" class="nav__link">Prenotazione</a>
            <a href="#" class="nav__link">Storia</a>
@@ -57,6 +57,9 @@
            <a href="#" class="nav__link">Mappa</a>
            <a href="#" class="nav__link">Orario</a>
         </nav>
+        <div class="burger">
+            <span class="burger__item"></span>
+        </div>
     </div>
 </header>
 
@@ -78,7 +81,7 @@
         <div class="servizi-slider">
             <div class="servizi-slider__item">
                 <div class="servizi__img">
-                    <img src="/img/servizi/4.jpg" alt="sevizi photo" class="servizi__photo">
+                    <img src="/img/servizi/4-1.jpg" alt="sevizi photo" class="servizi__photo">
                 </div>
                 <div class="servisi__description">
                     <div class="servizi__name">Taglio  “hipster”</div>
@@ -165,15 +168,15 @@
             <div class="galeria__item third">
                 <img src="/img/galeria/3.jpg" alt="" class="galeria__img">
             </div>
-            <div class="galeria__item fourth">
+            <div class="galeria__item fourth ">
+                <img src="/img/galeria/5.jpg" alt="" class="galeria__img">
+            </div>
+            <div class="galeria__item fifth">
                 <img src="/img/galeria/4.jpg" alt="" class="galeria__img">
                 <div class="galeria__item-text">
                     <h3 class="galeria__item-title">Shaving</h3>
                     <div class="galeria__description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam </div>
                 </div>
-            </div>
-            <div class="galeria__item fifth">
-                <img src="/img/galeria/5.jpg" alt="" class="galeria__img">
             </div>
             <div class="galeria__item galeria__item--btn sixth">
                 <div class="show-more">show more</div> 
@@ -199,7 +202,7 @@
                     </div>
                 </div>
                 <div class="reviews__item-text">
-                    <h2 class="reviews__item-title">Il mio taglio migliore!!!</h2>
+                    <h3 class="reviews__item-title">Il mio taglio migliore!!!</h3>
                     <div class="reviews__item-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         Minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. )))))</div>
                 </div>
@@ -215,7 +218,7 @@
                     </div>
                 </div>
                 <div class="reviews__item-text">
-                    <h2 class="reviews__item-title">Il mio taglio migliore!!!</h2>
+                    <h3 class="reviews__item-title">Il mio taglio migliore!!!</h3>
                     <div class="reviews__item-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         Minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. )))))</div>
                 </div>
@@ -231,7 +234,7 @@
                     </div>
                 </div>
                 <div class="reviews__item-text">
-                    <h2 class="reviews__item-title">Il mio taglio migliore!!!</h2>
+                    <h3 class="reviews__item-title">Il mio taglio migliore!!!</h3>
                     <div class="reviews__item-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         Minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. )))))</div>
                 </div>
@@ -247,7 +250,7 @@
                     </div>
                 </div>
                 <div class="reviews__item-text">
-                    <h2 class="reviews__item-title">Il mio taglio migliore!!!</h2>
+                    <h3 class="reviews__item-title">Il mio taglio migliore!!!</h3>
                     <div class="reviews__item-description">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
                         Minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. )))))</div>
                 </div>
@@ -273,7 +276,7 @@
                     <div class="contact__tel-title">Per info e prenotazione:</div>
                     <a class="contact__number" href="tel:3389785619">
                         <span>3389785619</span>
-                        <svg class="social__icon">
+                        <svg class="social__icon call">
                             <use xlink:href="#call"></use>
                         </svg>
                     </a>
@@ -298,7 +301,7 @@
                             </svg>
                         </a>
                         <a href="https://www.youtube.com/channel/UCUxN-pMHGYiYP0HLi-Pe_Qg" class="social__link" target="_blank">
-                            <svg class="social__icon">
+                            <svg class="social__icon youtube">
                                 <use xlink:href="#youtube"></use>
                             </svg>
                         </a>
@@ -318,8 +321,11 @@
 <footer class="footer">
     <div class="container">
         <div class="footer__ineer">
-            <img src="/img/footer_logo.png" alt="" class="footer__logo">
-          
+
+            <div class="footer__nav-col">
+                <img src="/img/footer_logo.png" alt="" class="footer__logo">
+            </div>
+            
             <div class="footer__nav-col">
                 <a href="#" class="footer__link">Servizi</a>
                 <a href="#" class="footer__link">Prenotazione</a>
@@ -338,6 +344,9 @@
     </div>
     <div class="footer-orange-row"></div>
 </footer>
+
+
+<script src="/script.js"></script>
 
 
 </body>

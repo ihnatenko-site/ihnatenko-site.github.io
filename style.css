@@ -39,6 +39,15 @@ body {
     height: 90px;
     overflow: hidden;
 }
+
+.header--fixed {
+    width: 100%;
+    background-color:#f3bf1b;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -77,6 +86,66 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+.burger {
+    display: none;
+    padding: 15px 0;
+    width: 30px;
+    cursor: pointer;
+
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 1;
+}
+
+.burger__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: all .2s linear;
+}
+
+.burger__item::before,
+.burger__item::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: all .2s linear;
+}
+
+.burger__item::before {
+    top: -8px;
+}
+.burger__item::after {
+    bottom: -8px;
+}
+
+.burger.active .burger__item{
+    background: none;
+}
+.burger.active .burger__item::before {
+    transform-origin: left top;
+    transform: rotate(45deg) translateX(-2px);
+}
+.burger.active .burger__item::after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translateX(-3px);
 }
 
 /* BUTTON */
@@ -149,7 +218,19 @@ body {
 .btn--next:before {
     border-bottom: 0;
     border-left: 0;
-} 
+}
+
+.slider__nav > .btn--prev {
+    position: absolute;
+    top: -40px;
+    left: -50px;
+}
+.slider__nav > .btn--next {
+    position: absolute;
+    top: -40px;
+    right: -50px;
+}
+
 
 
 
@@ -184,6 +265,9 @@ body {
 }
 
 /* servizi */
+.servizi-slider {
+    position: relative;
+}
 .servizi__title {
     margin-bottom: 28px;
 }
@@ -195,7 +279,7 @@ body {
 }
 
 .servisi__description {
-    width: 60%;
+    width: 55%;
     padding-left: 100px;
     display: flex;
     flex-direction: column;
@@ -203,7 +287,7 @@ body {
 }
 
 .servizi__img {
-    width: 40%;
+    width: 45%;
     overflow: hidden;
     border-radius: 15px;
     cursor: pointer;
@@ -219,7 +303,7 @@ body {
 }
 
 .servizi__photo:hover {
-    transform: scale(1.7);
+    transform: scale(1.3);
 }
 
 .servizi__name {
@@ -235,7 +319,12 @@ body {
 }
 
 .slider__nav {
+    width: 100%;
     margin-top: 21px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
 }
 
 
@@ -268,8 +357,7 @@ body {
     color: #828282;
 
     position: absolute;
-    top: -18%;
-    left: 35%;
+    top: -50px;
     z-index: 2;
 }
 
@@ -382,13 +470,13 @@ body {
 
 .galeria__item.first,
 .galeria__item.second,
-.galeria__item.fourth,
+.galeria__item.fifth,
 .galeria__item.sixth {
     width: 24%;
 }
 
 .galeria__item.third,
-.galeria__item.fifth {
+.galeria__item.fourth {
     width: 50%;
 }
 
@@ -402,6 +490,7 @@ body {
     display: block;
     max-width: 100%;
     height: auto;
+    position: absolute; 
 }
 
 .galeria__item--btn {
@@ -427,7 +516,8 @@ body {
 .show-more {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
 }
 
 .galeria__item-text {
@@ -441,6 +531,7 @@ body {
 }
 
 .galeria__item-text.top {
+    width: 100%;
     top: 0;
     bottom: auto;
 }
@@ -526,7 +617,7 @@ body {
 }
 
 .reviews__item-title {
-    margin-bottom: 8px;
+    margin: 8px 0;
     font-size: 23px;
     font-weight: 500;
     line-height: normal;
@@ -626,13 +717,20 @@ body {
     fill: #828282;
     text-decoration: none;
 }
-
-svg #call {
-    fill: #000;
+.social__icon.youtube {
+    margin-right: 0;
 }
 
+.call{
+    fill: #000;
+    width: 40px;
+    height: 40px;
+    display: block;
+    min-width: 40px;
+}
 
 .map {
+    max-width: 100%;
     width: 580px;
     height: 600px;
     border-radius: 15px;
@@ -651,6 +749,7 @@ svg #call {
     width: 100%;
     max-width: 590px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -709,9 +808,42 @@ svg #call {
         font-size: 18px;
     }
 
+    .servizi-slider {
+        width: 588px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .servizi__img {
+        width: 588px;
+        margin-bottom: 20px;
+    }
+    .servisi__description {
+        width: 588px;
+        max-width: 100%;
+        padding-left: 0;
+    }
+    .servizi__name {
+        margin-bottom: 17px;
+        font-size: 23px;
+        text-align: center;
+    }
+    .servizi__text {
+        font-size: 20px;
+        padding-left: 0;
+        text-align: center;
+    }
+    .slider__nav > .btn--prev {
+        top: -100px;
+    }
+    .slider__nav > .btn--next {
+        top: -100px;
+    }
+   
+
     .team__item {
         margin: 0 auto;
         width: 100%;
+        max-width: 585px;
     }
     .team__item:nth-child(1) {
         margin-bottom: 250px;
@@ -735,10 +867,10 @@ svg #call {
         top: 110%;
     }
     .reviews__btn.btn--next {
-        right: 44%;
+        right: 40%;
     }
     .reviews__btn.btn--prev {
-        left: 44%;
+        left: 40%;
     }
 
     .reviews__item:nth-child(4) {
@@ -767,8 +899,9 @@ svg #call {
         width: 40px;
         height: 40px;
     }
-
-
+    .call {
+        margin-right:0;
+    }
 
     .footer {
         margin-top: -115px;
@@ -789,6 +922,28 @@ svg #call {
     }
     .nav {
         display: none;
+        padding: 150px 50px 0;
+        
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background-color: #f3bf1b;
+        background-blend-mode: normal;
+    }
+    .nav.active{
+        display: block;
+    }
+    .nav__link {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .nav__logo {
+        display: none;
+    }
+    .burger {
+        display: block;
     }
 
     .intro {
@@ -798,22 +953,8 @@ svg #call {
         display: inline-block;
     }
 
-    .servizi__img {
-        width: 50%;
-        margin-bottom: 20px;
-    }
-    .servisi__description {
-        width: 51%;
-        padding-left: 0;
-    }
-    .servizi__name {
-        margin-bottom: 17px;
-        font-size: 23px;
-    }
-    .servizi__text {
-        font-size: 19px;
-    }
 
+  
     .storia {
         height: 550px;
     }
@@ -833,20 +974,197 @@ svg #call {
 
     .galeria__item.first,
     .galeria__item.second {
-        width: 50%;
+        width: 49%;
     }
-
     .galeria__item.third,
-    .galeria__item.fifth {
+    .galeria__item.fourth {
         width: 100%;
     }
+    .galeria__item.fifth,
+    .galeria__item.sixth {
+        width: 49%;
+    }
+    .galeria__item.fourth {
+        margin-bottom: 21px;
+    }
+    .galeria__img {
+        top: 0;
+    }
+    .galeria__item.fourth .galeria__img {
+        top: -80px;
+    }
 
+    .reviews__inner {
+        justify-content: center;
+    }
+    .reviews__item:nth-child(3) {
+        display: none;
+    }
+    .reviews__item {
+        width: 44%;
+    }
+
+
+    
 @media (max-width: 767.98px) {
+    h2 {
+        margin-top: 50px;
+        font-size: 28px;
+    }
 
+    .slider__nav > .btn--prev {
+        left: 15px;
+    }
+    .slider__nav > .btn--next {
+        right: 15px;
+    }
+
+    .team__item {
+        padding: 20px 15px 25px 270px;
+        min-height: 250px;
+    }
+    .team_proffesion {
+        font-size: 23px;
+    }
+    .team_description {
+        font-size: 22px;
+    }
+    .team__photo {
+        max-height: 450px;
+    }
+
+    .contact__info {
+        width: 100%;
+    }  
+    .contact__inner {
+        width: 100%;
+        text-align: center;
+    }
+    .contact__title {
+        margin-top: 70px;
+    }
+    .contact__number {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social__nav {
+        display: flex;
+        justify-content: center;
+    }
 }
 
-@media (max-width: 575.98px) {
 
+
+@media (max-width: 575.98px) {
+    .reviews__item:nth-child(2) {
+        display: none;
+    }
+    .reviews__item {
+        width: 60%;
+    }
+
+    .team__title {
+        margin-bottom: 85px;
+    }
+    .team__item {
+        padding: 12px 12px 423px 12px;
+        text-align: center;
+    }
+    .team__item:nth-child(1) {
+        margin-bottom: 100px;
+    }
+    .team_description {
+        font-size: 19px;
+    }
+    .team__photo {
+        max-height: 410px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .team_proffesion {
+        margin-bottom: 12px;
+        font-size: 20px;
+    }
+    .team_name {
+        width: 100%;
+        font-size: 23px;
+        top: -40px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .storia__description {
+        width: 100%;
+        padding: 12px 10px;
+    }
+    .storia__description-text {
+        font-size: 16px;
+    }
+
+    .galeria__item.first, .galeria__item.second, .galeria__item.third,
+    .galeria__item.fourth, .galeria__item.fifth, .galeria__item.sixth {
+        width: 100%;
+    }
+    .galeria__item.sixth {
+        display: none;
+    }
+
+    .reviews__item {
+        width: 80%;
+    }
+
+    .footer__ineer {
+        padding-bottom: 35px;
+        padding-top: 140px;
+       text-align: center;
+    }
+    .footer__nav-col:first-child {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .footer__nav-col {
+        width: 50%;
+    }
+    .footer__logo {
+        margin: 0 auto;
+        max-width: 167px;
+        height: auto;
+    }
+    .footer__link {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.openNav {
+    animation: openNav .3s linear;
+}
+
+@keyframes openNav {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
 }
 
 
