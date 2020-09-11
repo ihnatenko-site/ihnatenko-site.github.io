@@ -7,10 +7,11 @@ const burger = document.querySelector('.burger'),
 burger.addEventListener('click', () => {
     if (burger.classList.contains('active')) {
         burger.classList.remove('active');
-        nav.classList.remove('active');
+        nav.style.left = "-100%";
+  
     } else {
         burger.classList.add('active');
-        nav.classList.add('active');
+        nav.style.left = "0px";
     }
 });
 

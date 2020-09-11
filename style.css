@@ -52,6 +52,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all .4s linear;
 }
 
 .nav__link {
@@ -921,23 +922,20 @@ body {
         height: 50px;
     }
     .nav {
-        display: none;
-        padding: 150px 50px 0;
+        display: block;
+        padding: 150px 40px 0;
         
         height: 100vh;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -100%;
         z-index: 999;
-        background-color: #f3bf1b;
-        background-blend-mode: normal;
-    }
-    .nav.active{
-        display: block;
+        background-color: rgba(243,191,27, 0.9);
     }
     .nav__link {
         display: block;
         margin-bottom: 20px;
+        font-weight: 500;
     }
     .nav__logo {
         display: none;
@@ -1001,7 +999,8 @@ body {
         display: none;
     }
     .reviews__item {
-        width: 44%;
+        width: 350px;
+        min-width: 280px;
     }
 
 
@@ -1061,7 +1060,7 @@ body {
         display: none;
     }
     .reviews__item {
-        width: 60%;
+        width: 290px;
     }
 
     .team__title {
@@ -1109,9 +1108,22 @@ body {
     .galeria__item.sixth {
         display: none;
     }
+    .galeria__img.bottom {
+        top: auto;
+    }
+    .galeria__item.third {
+        height: 285px;
+    }
+    .galeria__item.fourth .galeria__img {
+        height: 285px;
+        top: 0;
+    }
 
-    .reviews__item {
-        width: 80%;
+    .reviews__btn.btn--prev {
+        left: 30%;
+    }
+    .reviews__btn.btn--next {
+        right: 30%;
     }
 
     .footer__ineer {
@@ -1154,8 +1166,8 @@ body {
 
 
 
-.openNav {
-    animation: openNav .3s linear;
+/* .openNav {
+    animation: openNav .4s linear;
 }
 
 @keyframes openNav {
@@ -1165,6 +1177,6 @@ body {
     100% {
         left: 0;
     }
-}
+} */
 
 
