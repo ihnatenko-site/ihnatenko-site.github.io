@@ -1109,14 +1109,19 @@ body {
         display: none;
     }
     .galeria__img.bottom {
-        top: auto;
+       
     }
     .galeria__item.third {
         height: 285px;
     }
     .galeria__item.fourth .galeria__img {
-        height: 285px;
         top: 0;
+    }
+    .galeria__item.fourth {
+        height: 285px;
+    }
+    .galeria__item-text {
+        padding: 10px;
     }
 
     .reviews__btn.btn--prev {
