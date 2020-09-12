@@ -937,6 +937,12 @@ body {
         margin-bottom: 20px;
         font-weight: 500;
     }
+    .nav__link:hover {
+        color: #fff;
+    }
+    .nav__link:after {
+        background-color: #fff;
+    }
     .nav__logo {
         display: none;
     }
@@ -1107,9 +1113,6 @@ body {
     }
     .galeria__item.sixth {
         display: none;
-    }
-    .galeria__img.bottom {
-       
     }
     .galeria__item.third {
         height: 285px;
