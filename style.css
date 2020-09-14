@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    margin-top: 80px;
+    margin-top:65px;
     font-family: 'Russo One', sans-serif;
     font-size: 35px;
     font-weight: normal;
@@ -34,6 +34,10 @@ body {
     margin: 0 auto;
 }
 
+.servizi, .team, .galeria, .reviews {
+    padding-top: 15px;
+}
+
 /* HEADER */
 .header {
     height: 90px;
@@ -45,12 +49,16 @@ body {
     border-bottom: 4px solid #f3bf1b;
 }
 .header.fixed {
+    height: 60px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 999;
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+.header.fixed .nav__logo {
+    width: 130px;
 }
 
 .nav {
@@ -66,6 +74,12 @@ body {
     color: #000;
     text-decoration: none;
     transition: all .2s linear;
+}
+.nav__link.active {
+    color: #f3bf1b;
+}
+.nav__link.active.nav__link:after{
+    width: 100%;
 }
 
 .nav__link:hover {
@@ -683,6 +697,7 @@ body {
     line-height: 59px;
     color: #000000;
     text-decoration: none;
+    user-select: none; 
 
     display: flex;
     align-items: center;
@@ -930,6 +945,9 @@ body {
         background-color: #000;
         border-bottom-width: 3px;
     }
+    .header.fixed {
+        height: 50px;
+    }
     .nav {
         display: block;
         padding: 150px 40px 0;
@@ -939,7 +957,7 @@ body {
         top: 0;
         left: -100%;
         z-index: 999;
-        background-color: rgba(243,191,27, 0.9);
+        background-color: rgba(243,191,27, 1);
     }
     .intro {
         margin-top: 50px;
@@ -986,6 +1004,7 @@ body {
     }
     .storia__inner {
         height: 370px;
+        top: 50px;
     }
     .storia__description {
         padding: 45px 25px
