@@ -290,6 +290,7 @@ body {
 .servizi-slider {
     position: relative;
 }
+
 .servizi__title {
     margin-bottom: 28px;
 }
@@ -298,6 +299,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.servizi-slider__item.hidden {
+    display: none;
 }
 
 .servisi__description {
@@ -310,6 +314,7 @@ body {
 
 .servizi__img {
     width: 45%;
+    max-height: 465px;
     overflow: hidden;
     border-radius: 15px;
     cursor: pointer;
@@ -317,6 +322,7 @@ body {
 
 .servizi__photo {
     display: block;
+    width: 530px;
     max-width: 100%;
     height: auto;
 
@@ -836,8 +842,8 @@ body {
         max-width: 100%;
         margin: 0 auto;
     }
-    .servizi__img {
-        width: 588px;
+    .servizi__img { 
+        width: 530px;
         margin-bottom: 20px;
     }
     .servisi__description {
@@ -949,7 +955,9 @@ body {
         height: 50px;
     }
     .nav {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
         padding: 150px 40px 0;
         
         height: 100vh;
@@ -977,6 +985,9 @@ body {
         margin-bottom: 20px;
         font-weight: 500;
     }
+    .nav__link.active {
+        color: #fff;
+    }
     .nav__link:hover {
         color: #fff;
     }
@@ -998,7 +1009,6 @@ body {
     }
 
 
-  
     .storia {
         height: 550px;
     }
@@ -1049,8 +1059,7 @@ body {
         width: 350px;
         min-width: 280px;
     }
-
-
+}
     
 @media (max-width: 767.98px) {
     h2 {
@@ -1229,3 +1238,40 @@ body {
 } */
 
 
+.swing-in-top-fwd {
+	-webkit-animation: swing-in-top-fwd 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-top-fwd 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+@-webkit-keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
+  @keyframes swing-in-top-fwd {
+    0% {
+      -webkit-transform: rotateX(-100deg);
+              transform: rotateX(-100deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+              transform: rotateX(0deg);
+      -webkit-transform-origin: top;
+              transform-origin: top;
+      opacity: 1;
+    }
+  }
