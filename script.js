@@ -158,7 +158,7 @@ function showSlide(n) {
 
 
     sliderItem[slideIndex - 1].classList.remove('hidden');
-    sliderItem[slideIndex - 1].classList.add('swing-in-top-fwd');
+    sliderItem[slideIndex - 1].classList.add('fade-in');
    /*  sliderItem[slideIndex - 1].querySelector('.servizi__img').classList.add('swing-in-top-fwd'); */
 }
 
@@ -170,12 +170,14 @@ showSlide(slideIndex);
 
 sliderPrev.addEventListener('click', () => {
     plusSlide(-1);
+    clearInterval(sliderInterval);
 });
 sliderNext.addEventListener('click', () => {
     plusSlide(1);
+    clearInterval(sliderInterval);
 });
 
-let interval = setInterval(plusSlide, 3000);
+let sliderInterval = setInterval(plusSlide, 4000);
 
 
 

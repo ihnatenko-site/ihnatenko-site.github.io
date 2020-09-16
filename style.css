@@ -258,8 +258,9 @@ body {
 /* INTRO */
 .intro {
     margin-top: 90px;
-    background: url(/img/intro_bg.jpg) center no-repeat;
+    background: url(/img/intro_bg.jpg)  no-repeat;
     background-size: cover;
+    background-position: 71%;
 
     width: 100%;
     height: 630px;
@@ -307,9 +308,9 @@ body {
 .servisi__description {
     width: 55%;
     padding-left: 100px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .servizi__img {
@@ -848,8 +849,10 @@ body {
     }
     .servisi__description {
         width: 588px;
+        height: 200px;
         max-width: 100%;
         padding-left: 0;
+        padding-top: 0;
     }
     .servizi__name {
         margin-bottom: 17px;
@@ -860,6 +863,9 @@ body {
         font-size: 20px;
         padding-left: 0;
         text-align: center;
+    }
+    .slider__nav {
+        top: 40%;
     }
     .slider__nav > .btn--prev {
         top: -100px;
@@ -1112,6 +1118,13 @@ body {
 
 
 @media (max-width: 575.98px) {
+    .slider__nav > .btn--prev {
+        left: 4px;
+    }
+    .slider__nav > .btn--next {
+        right: 4px;
+    }
+    
     .reviews__item:nth-child(2) {
         display: none;
     }
@@ -1222,56 +1235,27 @@ body {
 
 
 
-
-
-/* .openNav {
-    animation: openNav .4s linear;
+  .fade-in {
+	-webkit-animation: fade-in .8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in .8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-@keyframes openNav {
+@-webkit-keyframes fade-in {
     0% {
-        left: -100%;
-    }
-    100% {
-        left: 0;
-    }
-} */
-
-
-.swing-in-top-fwd {
-	-webkit-animation: swing-in-top-fwd 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-	        animation: swing-in-top-fwd 0.7s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
-}
-
-@-webkit-keyframes swing-in-top-fwd {
-    0% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
       opacity: 0;
     }
     100% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
       opacity: 1;
     }
   }
-  @keyframes swing-in-top-fwd {
+  @keyframes fade-in {
     0% {
-      -webkit-transform: rotateX(-100deg);
-              transform: rotateX(-100deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
       opacity: 0;
     }
     100% {
-      -webkit-transform: rotateX(0deg);
-              transform: rotateX(0deg);
-      -webkit-transform-origin: top;
-              transform-origin: top;
       opacity: 1;
     }
   }
+
+
+  
