@@ -258,7 +258,7 @@ body {
 /* INTRO */
 .intro {
     margin-top: 90px;
-    background: url(/img/intro_bg.jpg)  no-repeat;
+    background: url(img/intro_bg.jpg)  no-repeat;
     background-size: cover;
     background-position: 71%;
 
