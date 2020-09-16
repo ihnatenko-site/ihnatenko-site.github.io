@@ -862,7 +862,7 @@ body {
     .servizi__text {
         font-size: 20px;
         padding-left: 0;
-        text-align: center;
+        text-align: left;
     }
     .slider__nav {
         top: 40%;
@@ -1143,7 +1143,7 @@ body {
         margin-bottom: 100px;
     }
     .team_description {
-        font-size: 19px;
+        font-size: 17px;
     }
     .team__photo {
         max-height: 410px;
@@ -1152,11 +1152,11 @@ body {
     }
     .team_proffesion {
         margin-bottom: 12px;
-        font-size: 20px;
+        font-size: 19px;
     }
     .team_name {
         width: 100%;
-        font-size: 23px;
+        font-size: 22px;
         top: -40px;
         left: 50%;
         transform: translateX(-50%);
@@ -1164,7 +1164,8 @@ body {
 
     .storia__description {
         width: 100%;
-        padding: 12px 10px;
+        padding: 12px 10px 15px;
+        border-radius: 0px;
     }
     .storia__description-text {
         font-size: 16px;
@@ -1190,11 +1191,14 @@ body {
         padding: 10px;
     }
 
+    .reviews__btn {
+        top: 120px;
+    }
     .reviews__btn.btn--prev {
-        left: 30%;
+        left: 5px;
     }
     .reviews__btn.btn--next {
-        right: 30%;
+        right: 5px;
     }
 
     .footer__ineer {
