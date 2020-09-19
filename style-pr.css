@@ -1101,7 +1101,7 @@ body {
         padding: 150px 40px 0;
         
         height: 100vh;
-        position: fixed;
+        position: absolute;
         top: 0;
         left: -100%;
         z-index: 999;
