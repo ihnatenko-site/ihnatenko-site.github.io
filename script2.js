@@ -32,23 +32,12 @@ burger.addEventListener('click', () => {
     }
 });
 
-navLinks.forEach((item) => {
-	item.onclick = function() {
-		window.removeEventListener('scroll', scrollHandler );
-		
-		setTimeout(() => window.addEventListener('scroll', scrollHandler), 1000);
-	}
-});
-
 
  /* FIXED HEADER  &&& ACTIVE LINKS*/
 
 let lastScroll = 0;
 
-window.addEventListener('scroll', scrollHandler);
-
-
-function scrollHandler() {
+window.addEventListener('scroll', function () {
     
     let height = pageYOffset;
 
@@ -66,7 +55,7 @@ function scrollHandler() {
     detectActiveLink();
     lastScroll = height;
 
-}
+});
 
 function detectActiveLink() {
     let height = pageYOffset;
