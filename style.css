@@ -46,6 +46,7 @@ body {
     background-color: #fff;
     width: 100%;
     top: 0;
+    z-index: 2;
     border-bottom: 4px solid #f3bf1b;
 }
 .header.fixed {
@@ -969,8 +970,8 @@ body {
         background-color: rgba(243,191,27, 1);
     }
     .intro {
-        margin-top: 50px;
-        height: 96vh;
+        margin-top: 0;
+        height: 100vh;
 
         display: block;
         text-align: center;
