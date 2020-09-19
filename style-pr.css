@@ -1109,10 +1109,10 @@ body {
     }
     .intro {
         margin-top: 50px;
-        height: 100vh;
+        height: 96vh;
 
         display: block;
-        padding-top: 650px;
+        padding-top: 550px;
         text-align: center;
     }
     .intro__title {
