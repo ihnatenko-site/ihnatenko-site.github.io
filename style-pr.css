@@ -1101,11 +1101,14 @@ body {
         padding: 150px 40px 0;
         
         height: 100vh;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -100%;
         z-index: 999;
         background-color: rgba(243,191,27, 1);
+
+        overflow:hidden;
+        -webkit-overflow-scrolling:touch;
     }
     .intro {
         margin-top: 50px;
