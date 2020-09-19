@@ -281,8 +281,8 @@ body {
 
 .intro__logo {
     display: none;
-    margin: -10px auto;
-    width: 141px;
+    margin: -8px auto;
+    width: 130px;
 }
 
 /* servizi */
@@ -824,14 +824,7 @@ body {
     h2 {
         font-size: 30px;
     }
-    .btn {
-        margin: 0 auto;
-    }
-
-    .intro__inner {
-        text-align: center;
-    }
-
+  
     .nav__link {
         font-size: 18px;
     }
@@ -953,7 +946,6 @@ body {
     .header {
         height: 50px;
         background-color: #000;
-        border-bottom-width: 3px;
     }
     .header.fixed {
         height: 50px;
@@ -974,6 +966,17 @@ body {
     }
     .intro {
         margin-top: 50px;
+        height: 100vh;
+
+        display: block;
+        padding-top: 550px;
+        text-align: center;
+    }
+    .intro__title {
+        margin-bottom: 30px;
+    }
+    .btn {
+        margin: 0 auto;
     }
   
     .nav__link {
@@ -997,9 +1000,6 @@ body {
         display: block;
     }
 
-    .intro {
-        height: 100vh;
-    }
     .intro__logo {
         display: block;
     }
@@ -1108,6 +1108,11 @@ body {
 
 
 @media (max-width: 575.98px) {
+    .intro__logo {
+        margin: -4px 0 0 0;
+        width: 112px;
+    }
+
     .slider__nav > .btn--prev {
         left: 4px;
     }
