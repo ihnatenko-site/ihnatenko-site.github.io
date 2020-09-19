@@ -49,7 +49,7 @@ body {
 /* HEADER */
 .header {
     height: 90px;
-    overflow: hidden;
+    /* overflow: hidden; */
     position: absolute;
     background-color: #fff;
     width: 100%;
