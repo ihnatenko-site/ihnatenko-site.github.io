@@ -34,9 +34,6 @@ body {
     margin: 0 auto;
 }
 
-.servizi, .team, .galeria, .reviews {
-    padding-top: 15px;
-}
 
 /* HEADER */
 .header {
@@ -968,6 +965,9 @@ body {
         left: -100%;
         z-index: 999;
         background-color: rgba(243,191,27, 1);
+
+        overflow:hidden;
+        -webkit-overflow-scrolling:touch;
     }
     .intro {
         margin-top: 0;
@@ -979,9 +979,9 @@ body {
     .intro__inner {
         position: absolute;
         width: 100%;
-        bottom: 50px;
+        bottom: 10vh;
         left: 50%;
-        z-index: 2;
+        z-index: 1;
         transform: translateX(-50%);
     }
     .intro__title {
@@ -1187,6 +1187,7 @@ body {
     .galeria__item-text {
         padding: 10px;
     }
+    
 
     .reviews__btn {
         top: 120px;

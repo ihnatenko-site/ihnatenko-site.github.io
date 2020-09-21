@@ -77,13 +77,13 @@ function detectActiveLink() {
         });
         navLinks[0].classList.add('active');
     }
-    if (height > offset(team).top-50 & height < offset(storia).top) {
+    if (height > offset(team).top-64 & height < offset(storia).top) {
         navLinks.forEach((item) => {
             item.classList.remove('active');
         });
         navLinks[1].classList.add('active');
     }
-    if (height > offset(storia).top-125 & height < offset(galeria).top) {
+    if (height > offset(storia).top-100 & height < offset(galeria).top) {
         navLinks.forEach((item) => {
             item.classList.remove('active');
         });
@@ -95,7 +95,7 @@ function detectActiveLink() {
         });
         navLinks[3].classList.add('active');
     }
-    if (height > offset(reviews).top-50 & height < offset(contact).top) {
+    if (height > offset(reviews).top-65 & height < offset(contact).top) {
         navLinks.forEach((item) => {
             item.classList.remove('active');
         });
