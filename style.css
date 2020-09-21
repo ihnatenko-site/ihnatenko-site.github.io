@@ -970,7 +970,7 @@ body {
         -webkit-overflow-scrolling:touch;
     }
     .intro {
-        margin-top: 0;
+        margin-top: -50px;
         height: 100vh;
 
         display: block;
