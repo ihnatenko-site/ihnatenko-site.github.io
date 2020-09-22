@@ -171,7 +171,7 @@ body {
 .btn {
     display: block;
     padding: 12px 25px;
-    border: 0;
+    border: 4px solid transparent;
     border-radius: 10px;
     background-color: #f3bf1b;
     font-family: Rubik;
@@ -191,8 +191,9 @@ body {
 }
 
 .btn:hover {
-    box-shadow: 0 0 40px 40px #e74c3c inset;
+    box-shadow: 0 0 40px 40px #000 inset;
     color: #fff;
+    border: 4px solid #f3bf1b;
 }
 .btn:hover.btn--prev:before,
 .btn:hover.btn--next:before {
@@ -214,8 +215,8 @@ body {
 .btn--next:before {
     content: '';
     display: block;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     border: 5px solid #000;
     border-radius: 6px;
    
@@ -226,17 +227,19 @@ body {
     z-index: 2; */
 
     transform: rotate(45deg);
-    margin: 0 auto;
+    
 
     transition: all .3s linear
 }
 .btn--prev:before {
     border-top: 0;
     border-right: 0;
+    margin-left: 10px;
 } 
 .btn--next:before {
     border-bottom: 0;
     border-left: 0;
+    margin-right: 10px;
 }
 
 .slider__nav > .btn--prev {
@@ -812,11 +815,133 @@ body {
 }
 
 
+/* ORARIO */
+.orario {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+.orario.show {
+    display: block;
+}
+
+.orario__wrapper {
+    width: 580px;
+    height: 465px;
+    border:  5px solid #f2c94c;
+    border-radius: 8.3px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.orario__content {
+    width: 90%;
+    height: 90%;
+    border-radius: 8.3px;
+    box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1000;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.orario__content-flex {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.orario__item:first-child {
+    margin-right: 55px;
+}
+
+.orario__info {
+    margin-bottom: 22px;
+}
+.orario__day {
+    margin-bottom: 12px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    line-height: normal;
+    color: #ffffff;
+}
+.orario__day span {
+    padding: 5px 12px;
+    background-color: #f3bf1b;
+    border-radius: 24.8px;
+}
+.orario__day.rest span {
+    background-color: #d6d6d6;
+}
+
+.orario__time {
+    margin-left: 10px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    color: #000000;
+}
+
+.close__modal {
+    width: 35px;
+    height: 35px;
+    fill: #f3bf1b;
+    cursor: pointer;
+
+    transition: all .2s linear;
+}
+
+.orario__img {
+    width: 225px;
+    height: auto;
+    position: absolute;
+    z-index: 1000;
+}
+.orario__img.one {
+    width: 115px;
+    top: -77px;
+    left: -25px;
+}
+.orario__img.two {
+    top: -90px;
+    right: 60px;
+}
+.orario__img.three {
+    bottom: -65px;
+    right: 0;
+}
+.orario__img.four {
+    bottom: -20px;
+    left: -50px;
+}
 
 
 
 
-
+.close__modal:hover {
+    fill:#000;
+}
+.orario__nav {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 1000;
+}
 /* MEDIA */
 
 @media (max-width: 1199.98px) {
@@ -1115,6 +1240,12 @@ body {
         font-size: 39px;
     }
 
+    .servizi__name {
+        font-size: 22px;
+    }
+    .servizi__text {
+        font-size: 19px;
+    }
     .slider__nav > .btn--prev {
         left: 4px;
     }
@@ -1226,7 +1357,25 @@ body {
 }
 
 
+@media (max-width: 415px) {
+    .servizi__name {
+        font-size: 21px;
+    }
+    .servizi__text {
+        font-size: 17px;
+    }
 
+    .storia__description-title {
+        font-size: 20px;
+    }
+    .storia__description-text {
+        font-size: 15px;
+    }
+
+    .contact__number span {
+        margin-right: 5px;
+    }
+}
 
 
 
@@ -1263,5 +1412,26 @@ body {
     }
   }
 
+  .fade-in-modal {
+	-webkit-animation: fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   

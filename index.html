@@ -40,7 +40,55 @@
                 c24.32,11.872,50.624,17.888,78.24,17.888c8.832,0,16,7.168,16,16V384H400C400,392.832,392.832,400,384,400z"/>
         </g>
     </symbol>
+    <symbol id="close" viewBox="0 0 329.26933 329">
+        <path d="m194.800781 164.769531 128.210938-128.214843c8.34375-8.339844 8.34375-21.824219 0-30.164063-8.339844-8.339844-21.824219-8.339844-30.164063 0l-128.214844 128.214844-128.210937-128.214844c-8.34375-8.339844-21.824219-8.339844-30.164063 0-8.34375 8.339844-8.34375 21.824219 0 30.164063l128.210938 128.214843-128.210938 128.214844c-8.34375 8.339844-8.34375 21.824219 0 30.164063 4.15625 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921875-2.089844 15.082031-6.25l128.210937-128.214844 128.214844 128.214844c4.160156 4.160156 9.621094 6.25 15.082032 6.25 5.460937 0 10.921874-2.089844 15.082031-6.25 8.34375-8.339844 8.34375-21.824219 0-30.164063zm0 0"/>
+    </symbol>
 </svg>
+
+<div class="orario fade-in-modal">
+    <div class="orario__wrapper">
+        <div class="orario__content">
+            <div class="orario__nav">
+                <svg class="close__modal">
+                <use xlink:href="#close"></use>
+                </svg>
+             </div>
+            <div class="orario__content-flex">
+
+                <div class="orario__item">
+                    <div class="orario__info">
+                        <div class="orario__day"> <span>Martedi-Mercoledi</span></div>
+                        <div class="orario__time">8.00-12.40/15.20-20.00</div>
+                    </div>
+                    <div class="orario__info">
+                        <div class="orario__day"> <span>Jiovedi-Venerdi</span> </div>
+                        <div class="orario__time">8.00-20.00</div>
+                    </div>
+                    <div class="orario__info">
+                        <div class="orario__day"> <span>Sabato</span> </div>
+                        <div class="orario__time">7.20-20.40</div>
+                    </div>
+                </div>
+
+                <div class="orario__item">
+                    <div class="orario__info">
+                        <div class="orario__day rest"> <span>Lunedi</span> </div>
+                        <div class="orario__time">Festa</div>
+                    </div>
+                    <div class="orario__info">
+                        <div class="orario__day rest"> <span>Domenica</span> </div>
+                    <div class="orario__time">Festa</div>
+                    </div>
+                </div>
+
+            </div>
+            <img class="orario__img one" src="img/orario/1.png" alt="">
+            <img class="orario__img two" src="img/orario/2.png" alt="">
+            <img class="orario__img three" src="img/orario/3.png" alt="">
+            <img class="orario__img four" src="img/orario/4.png" alt="">
+        </div>
+    </div>
+</div>
 
 <header class="header">
     <div class="container">
@@ -55,7 +103,7 @@
            <a href="#recensioni" class="nav__link">Recensioni</a>
            <a href="#contatti" class="nav__link">Contatti</a>
            <a href="#contatti" class="nav__link">Mappa</a>
-           <a href="#" class="nav__link">Orario</a>
+           <a href="#" data-modal class="nav__link">Orario</a>
         </nav>
         <img src="img/footer_logo.png" alt="barbershop logo" class="intro__logo">
         <div class="burger">
@@ -96,7 +144,7 @@
                 </div>
                 <div class="servisi__description">
                     <div class="servizi__name">Taglio  “Canadka”</div>
-                    <div class="servizi__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium voluptates labore accusamus. Incidunt consequatur aspernatur quibusdam velit est facilis numquam delectus, ipsa veritatis beatae modi, odio totam, voluptate quos illo!</div>
+                    <div class="servizi__text">Lorem ipsum dolor sit, Praesentium voluptates labore accusamus. Incidunt consequatur aspernatur quibusdam velit est facilis numquam delectus, ipsa veritatis beatae modi, odio totam, voluptate quos illo!</div>
                 </div>
             </div>
             <div class="servizi-slider__item">
@@ -105,7 +153,7 @@
                 </div>
                 <div class="servisi__description">
                     <div class="servizi__name">Taglio  “PEREDOK”</div>
-                    <div class="servizi__text">Amet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias eius numquam voluptatibus aliquam deserunt eaque quam provident itaque molestiae? Aspernatur praesentium quas ratione vitae eius voluptas suscipit quisquam eaque dolorum.</div>
+                    <div class="servizi__text">Amet Lorem ipsum dolor adipisicing elit. Molestias eius numquam voluptatibus aliquam deserunt eaque quam provident itaque molestiae? Aspernatur praesentium quas ratione vitae eius voluptas suscipit quisquam eaque dolorum.</div>
                 </div>
             </div>
 
@@ -357,7 +405,7 @@
                 <a href="#recensioni" class="footer__link">Recensioni</a>
                 <a href="#" class="footer__link">Contatti</a>
                 <a href="#" class="footer__link">Mappa</a>
-                <a href="#" class="footer__link">Orario</a>
+                <a href="#" data-modal class="footer__link">Orario</a>
             </div>
     
         </div>

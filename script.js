@@ -193,6 +193,21 @@ let sliderInterval = setInterval(plusSlide, 4000);
 
 
    
+/* MODAL */
+const modal = document.querySelector('.orario'),
+      modalLink = document.querySelectorAll('[data-modal]'),
+      modalCLose = document.querySelector('.orario__nav');
+
+
+modalLink.forEach(item => {
+    item.addEventListener('click', () => {
+        modal.classList.toggle('show');
+    });
+});
+
+modalCLose.addEventListener('click', () => {
+    modal.classList.remove('show');
+});
 
 
 
