@@ -183,7 +183,7 @@ body {
     outline: none;
 
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: all 300ms ease-in-out ;
 }
 
 .btn--right {
@@ -191,13 +191,16 @@ body {
 }
 
 .btn:hover {
-    box-shadow: 0 0 40px 40px #000 inset;
+    background-color: transparent;
     color: #fff;
     border: 4px solid #f3bf1b;
 }
+.btn--prenotare:hover {
+    color: #f3bf1b;
+}
 .btn:hover.btn--prev:before,
 .btn:hover.btn--next:before {
-    border-color: #fff;
+    border-color:  #f3bf1b;
 } 
 
 .btn--prev, 
@@ -208,6 +211,7 @@ body {
     height: 40px;
     padding: 0;
 }
+
 .btn--prev {
     margin-right: 60px;
 }
@@ -836,7 +840,7 @@ body {
     width: 580px;
     height: 465px;
     border:  5px solid #f2c94c;
-    border-radius: 8.3px;
+    border-radius: 10px;
 
     position: absolute;
     top: 50%;
@@ -848,7 +852,7 @@ body {
 .orario__content {
     width: 90%;
     height: 90%;
-    border-radius: 8.3px;
+    border-radius: 10px;
     box-shadow: 0 0 21px 0 rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
 
@@ -1334,6 +1338,10 @@ body {
         margin-top: 50px;
     }
 
+    .map {
+        border-radius:0;
+    }
+
     .footer__ineer {
         padding-bottom: 35px;
         padding-top: 140px;
@@ -1394,7 +1402,6 @@ body {
 	-webkit-animation: fade-in 1.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in 1.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-
 @-webkit-keyframes fade-in {
     0% {
       opacity: 0;
@@ -1412,11 +1419,11 @@ body {
     }
   }
 
+
   .fade-in-modal {
 	-webkit-animation: fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 	        animation: fade-in .5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-
 @-webkit-keyframes fade-in {
     0% {
       opacity: 0;
