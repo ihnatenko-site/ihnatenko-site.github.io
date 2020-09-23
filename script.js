@@ -202,6 +202,7 @@ const modal = document.querySelector('.orario'),
 modalLink.forEach(item => {
     item.addEventListener('click', () => {
         modal.classList.toggle('show');
+        document.body.style.overflow = "hidden";
         if(burger.classList.contains('active')) {
             nav.style.left = "-100%";
             burger.classList.remove('active');
@@ -211,6 +212,7 @@ modalLink.forEach(item => {
 
 modalCLose.addEventListener('click', () => {
     modal.classList.remove('show');
+    document.body.style.overflow = "";
 });
 
 
