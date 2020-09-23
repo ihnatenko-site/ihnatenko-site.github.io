@@ -169,7 +169,7 @@ body {
 
 /* BUTTON */
 .btn {
-    display: block;
+    display: inline-block;
     padding: 12px 25px;
     border: 4px solid transparent;
     border-radius: 10px;
@@ -181,6 +181,7 @@ body {
     text-transform: uppercase;
     cursor: pointer;
     outline: none;
+    text-decoration: none;
 
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: all 300ms ease-in-out ;
@@ -188,6 +189,7 @@ body {
 
 .btn--right {
     margin-left: auto;
+    display: table;
 }
 
 .btn:hover {
@@ -826,6 +828,7 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
+    backdrop-filter: grayscale(0.75) blur(4px);
 }
 .orario.show {
     display: block;
@@ -947,7 +950,9 @@ body {
     h2 {
         font-size: 30px;
     }
-  
+    .btn--right {
+        margin: 0 auto;
+    }
     .nav__link {
         font-size: 18px;
     }

@@ -202,6 +202,10 @@ const modal = document.querySelector('.orario'),
 modalLink.forEach(item => {
     item.addEventListener('click', () => {
         modal.classList.toggle('show');
+        if(burger.classList.contains('active')) {
+            nav.style.left = "-100%";
+            burger.classList.remove('active');
+        }
     });
 });
 
