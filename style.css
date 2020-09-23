@@ -213,7 +213,7 @@ body {
 }
 
 .btn--prev {
-    margin-right: 60px;
+    margin-right: 30px;
 }
 .btn--prev:before,
 .btn--next:before {
@@ -246,7 +246,7 @@ body {
     margin-right: 10px;
 }
 
-.slider__nav > .btn--prev {
+/* .slider__nav > .btn--prev {
     position: absolute;
     top: -40px;
     left: -50px;
@@ -255,7 +255,7 @@ body {
     position: absolute;
     top: -40px;
     right: -50px;
-}
+} */
 
 
 
@@ -297,7 +297,7 @@ body {
 }
 
 .servizi__title {
-    margin-bottom: 28px;
+    margin-bottom: 30px;
 }
 
 .servizi-slider__item {
@@ -352,12 +352,9 @@ body {
 }
 
 .slider__nav {
-    width: 100%;
-    margin-top: 21px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -592,6 +589,9 @@ body {
 
 
 /* REVIEWS */
+.reviews {
+    position: relative;
+}
 .reviews__title {
     margin-bottom: 69px;
 }
@@ -664,18 +664,13 @@ body {
     color: #828282;
 }
 
-.reviews__btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 3;
+.reviews__controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
 }
-.reviews__btn.btn--prev {
-    left: -38px;
-}
-.reviews__btn.btn--next {
-    right: -38px;
-}
+
+
 
 /* CONTACT */
 .contact__inner {
@@ -982,15 +977,7 @@ body {
         padding-left: 0;
         text-align: left;
     }
-    .slider__nav {
-        top: 45%;
-    }
-    .slider__nav > .btn--prev {
-        top: -100px;
-    }
-    .slider__nav > .btn--next {
-        top: -100px;
-    }
+    
    
 
     .team__item {
@@ -1016,18 +1003,6 @@ body {
     }
     .contact__map {
         margin: 0 auto;
-    }
-
-
-    .reviews__btn {
-        margin-top: 10px;
-        top: 110%;
-    }
-    .reviews__btn.btn--next {
-        right: 40%;
-    }
-    .reviews__btn.btn--prev {
-        left: 40%;
     }
 
     .reviews__item:nth-child(4) {
@@ -1116,8 +1091,21 @@ body {
     .intro__title {
         margin-bottom: 30px;
     }
+
     .btn {
         margin: 0 auto;
+    }
+    .btn.slider {
+        margin: 0;
+    }
+    .btn--prev.slider {
+        margin-right: 30px;
+    }
+    .reviews__btn.btn--prev {
+        margin-right: 30px;
+    }
+    .reviews__btn {
+        margin: 0;
     }
   
     .nav__link {
@@ -1204,12 +1192,7 @@ body {
         font-size: 28px;
     }
 
-    .slider__nav > .btn--prev {
-        left: 15px;
-    }
-    .slider__nav > .btn--next {
-        right: 15px;
-    }
+   
 
     .team__item {
         padding: 20px 15px 25px 270px;
@@ -1245,16 +1228,15 @@ body {
     }
 
     .servizi__name {
-        font-size: 22px;
+        margin-top: 20px;
+        font-size: 21px;
+        font-weight: normal;
     }
     .servizi__text {
         font-size: 19px;
     }
-    .slider__nav > .btn--prev {
-        left: 4px;
-    }
-    .slider__nav > .btn--next {
-        right: 4px;
+    .slider__nav {
+        margin-top: 35px;
     }
     
     .reviews__item:nth-child(2) {
@@ -1265,6 +1247,7 @@ body {
     }
 
     .team__title {
+        margin-top: 70px;
         margin-bottom: 85px;
     }
     .team__item {
@@ -1322,17 +1305,7 @@ body {
     .galeria__item-text {
         padding: 10px;
     }
-    
 
-    .reviews__btn {
-        top: 120px;
-    }
-    .reviews__btn.btn--prev {
-        left: 5px;
-    }
-    .reviews__btn.btn--next {
-        right: 5px;
-    }
 
     .contact__title {
         margin-top: 50px;
@@ -1361,6 +1334,57 @@ body {
     }
     .footer__link {
         margin-bottom: 10px;
+    }
+
+    .orario__wrapper {
+        width: 310px;
+        height: 485px;
+    }
+    .orario__nav {
+        top: 15px;
+        right: 15px;
+    }
+    .close__modal {
+        width: 25px;
+        height: 25px;
+    }
+    .orario__content-flex {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .orario__day {
+        font-size: 16px;
+    }
+    .orario__time {
+        font-size: 13px;
+    }
+    .orario__img {
+        width: 150px;
+    }
+    .orario__img.one {
+        width: 80px;
+        top: -70px;
+        left: -25px;
+    }
+    .orario__img.two {
+        top: -74px;
+        right: 38px;
+    }
+    .orario__img.three {
+        bottom: -64px;
+        right: -8px;
+    }
+    .orario__img.four {
+        bottom: -20px;
+        left: -50px;
+    }
+    .orario__item:first-child {
+        margin-right: 0;
+    }
+    .orario__item {
+        width: 63%;
     }
 }
 
