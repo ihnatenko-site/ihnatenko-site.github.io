@@ -355,7 +355,7 @@ body {
 .slider__nav {
   margin-top: 30px;
   display: flex;
-  justify-content: center;
+  margin-left: 407px;
 }
 
 /* TEAM */
@@ -370,6 +370,7 @@ body {
 }
 
 .team__item {
+  display: block;
   margin-bottom: 27px;
   width: 50%;
   max-width: 580px;
@@ -379,6 +380,7 @@ body {
   background-color: #f3bf1b;
 
   position: relative;
+  text-decoration: none;
 }
 
 .team_name {
@@ -590,7 +592,7 @@ body {
   position: relative;
 }
 .reviews__title {
-  margin-bottom: 69px;
+  margin-bottom: 28px;
 }
 
 .reviews__inner {
@@ -747,17 +749,20 @@ body {
 
 .social__nav {
   display: flex;
+  align-items: center;
 }
 
 .social__icon {
   margin-right: 50px;
   width: 48px;
   height: 48px;
-  fill: #828282;
+  fill: #828282  /* #f3bf1b */;
   text-decoration: none;
 }
 .social__icon.youtube {
   margin-right: 0;
+  width: 58px;
+  height: 58px;
 }
 
 .call {
@@ -984,6 +989,10 @@ body {
     font-size: 20px;
     padding-left: 0;
     text-align: left;
+  }
+  .slider__nav {
+    margin-left: 0;
+    justify-content: center;
   }
 
   .reviews__inner {

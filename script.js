@@ -179,14 +179,12 @@ document.addEventListener("DOMContentLoaded", function () {
   /* MODAL */
   const modal = document.querySelector(".orario"),
     modalLink = document.querySelectorAll("[data-modal]"),
-    modalCLose = document.querySelector(".orario__nav"),
-    introBlock = document.querySelector(".intro");
+    modalCLose = document.querySelector(".orario__nav");
 
   modalLink.forEach((item) => {
     item.addEventListener("click", () => {
       modal.classList.toggle("show");
-      document.body.style.overflow = "hidden";
-      introBlock.style.overflow = "hidden";
+      /* document.body.style.overflow = "hidden"; */
       if (burger.classList.contains("active")) {
         nav.style.left = "-100%";
         burger.classList.remove("active");
@@ -196,8 +194,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   modalCLose.addEventListener("click", () => {
     modal.classList.remove("show");
-    document.body.style.overflow = "";
-    introBlock.style.overflow = "";
+    /* document.body.style.overflow = ""; */
+  });
+
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.classList.toggle("show");
+    }
   });
 
 
