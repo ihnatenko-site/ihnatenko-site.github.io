@@ -1282,7 +1282,7 @@ body {
   }
   
   .team_description {
-    padding: 0 0 0 10px;
+    padding: 0 10px 0 10px;
     font-size: 17px;
     background-color: #fff;
     text-align: left;
