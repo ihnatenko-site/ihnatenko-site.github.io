@@ -376,7 +376,7 @@ body {
   max-width: 580px;
   padding: 40px 40px 75px 280px;
   border-radius: 15px;
-  box-shadow: 0 0 17px 0 rgba(0, 0, 0, 0.01);
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.2);
   background-color: #f3bf1b;
 
   position: relative;
@@ -1274,31 +1274,38 @@ body {
 
   .team__title {
     margin-top: 70px;
-    margin-bottom: 85px;
+    margin-bottom: 235px;
   }
   .team__item {
-    padding: 12px 12px 423px 12px;
+    padding: 205px 0px 40px 0px;
     text-align: center;
   }
-  .team__item:nth-child(1) {
-    margin-bottom: 100px;
-  }
+  
   .team_description {
+    padding: 0 0 0 10px;
     font-size: 17px;
+    background-color: #fff;
+    text-align: left;
+    min-height: 67px;
   }
   .team__photo {
     max-height: 410px;
     left: 50%;
+    bottom: 146px;
     transform: translateX(-50%);
   }
   .team_proffesion {
-    margin-bottom: 12px;
+    background-color: #fff;
+    padding: 12px 0 5px 10px;
+    margin-bottom: 0;
     font-size: 19px;
+    text-align: left;
   }
   .team_name {
     width: 100%;
+    color: #000;
     font-size: 22px;
-    top: -40px;
+    top: 318px;
     left: 50%;
     transform: translateX(-50%);
   }
