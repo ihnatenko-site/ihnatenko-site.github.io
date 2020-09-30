@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
   modalLink.forEach((item) => {
     item.addEventListener("click", () => {
       modal.classList.toggle("show");
-      /* document.body.style.overflow = "hidden"; */
+      document.body.style.overflow = "hidden";
       if (burger.classList.contains("active")) {
         nav.style.left = "-100%";
         burger.classList.remove("active");
@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   modalCLose.addEventListener("click", () => {
     modal.classList.remove("show");
-    /* document.body.style.overflow = ""; */
+    document.body.style.overflow = "";
   });
 
   modal.addEventListener("click", (event) => {
