@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let position = 0;
   let counter = carousel.offsetWidth;
 
-
+  console.log(main.offsetWidth)
   right.onclick = () => {
     clearInterval(autoClick);
 
@@ -235,7 +235,7 @@ document.addEventListener("DOMContentLoaded", function () {
   left.onclick = () => {
     clearInterval(autoClick);
 
-    if (main.offsetWidth === 702) {
+    if (main.offsetWidth > 402 && main.offsetWidth <= 702) {
 
       if (counter > 2385) {
         position = -1800;
@@ -245,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
         counter += 300;
       }
     } 
-    else if (main.offsetWidth === 402) {
+    else if (main.offsetWidth <= 402) {
       if (counter > 2385) {
         position = -2100;
         counter = main.offsetWidth -10;
