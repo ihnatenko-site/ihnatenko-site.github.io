@@ -626,7 +626,7 @@ body {
   width: 280px;
 }
 .reviews__item:first-child {
-  margin-left: 1px;
+  margin-left: 3px;
 }
 
 .reviews__item-header {

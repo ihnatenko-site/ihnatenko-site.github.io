@@ -219,13 +219,24 @@ document.addEventListener("DOMContentLoaded", function () {
   right.onclick = () => {
     clearInterval(autoClick);
 
-    if (counter < main.offsetWidth) {
-      position = 0;
-      counter = 2391;
+    if (main.offsetWidth > 702) {
+      if (counter < main.offsetWidth+300) {
+        position = 0;
+        counter = 2391;
+      } else {
+        position -= 300;
+        counter -= 300;
+      } 
     } else {
-      position -= 300;
-      counter -= 300;
+      if (counter < main.offsetWidth) {
+        position = 0;
+        counter = 2391;
+      } else {
+        position -= 300;
+        counter -= 300;
+      }
     }
+    
 
     carousel.style.left = position + "px";
 
