@@ -215,15 +215,16 @@ document.addEventListener("DOMContentLoaded", function () {
   let position = 0;
   let counter = carousel.offsetWidth;
 
+
   right.onclick = () => {
     clearInterval(autoClick);
 
     if (counter < main.offsetWidth) {
       position = 0;
-      counter = 2300;
+      counter = 2391;
     } else {
-      position -= 288;
-      counter -= 288;
+      position -= 300;
+      counter -= 300;
     }
 
     carousel.style.left = position + "px";
@@ -234,12 +235,33 @@ document.addEventListener("DOMContentLoaded", function () {
   left.onclick = () => {
     clearInterval(autoClick);
 
-    if (counter > 2250) {
-      position = main.offsetWidth - counter;
-      counter = main.offsetWidth - 10;
-    } else {
-      position += 288;
-      counter += 288;
+    if (main.offsetWidth === 702) {
+
+      if (counter > 2385) {
+        position = -1800;
+        counter = main.offsetWidth -10;
+      } else {
+        position += 300;
+        counter += 300;
+      }
+    } 
+    else if (main.offsetWidth === 402) {
+      if (counter > 2385) {
+        position = -2100;
+        counter = main.offsetWidth -10;
+      } else {
+        position += 300;
+        counter += 300;
+      }
+    }
+    else {
+      if (counter > 2385) {
+        position = -1500;
+        counter = main.offsetWidth -10;
+      } else {
+        position += 300;
+        counter += 300;
+      }
     }
 
     carousel.style.left = position + "px";
