@@ -269,7 +269,8 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
     else {
-      if (counter > 2385) {
+      console.log(counter)
+      if (counter > 2365) {
         position = -1200;
         counter = main.offsetWidth -10;
       } else {
