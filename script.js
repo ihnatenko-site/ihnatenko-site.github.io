@@ -46,11 +46,16 @@ document.addEventListener("DOMContentLoaded", function () {
   function scrollHandler() {
     let height = pageYOffset;
 
-    if (height > intro) {
-      header.classList.add("fixed");
+    if (!burger.classList.contains("active")) {
+      if (height > intro) {
+        header.classList.add("fixed");
+      } else {
+        header.classList.remove("fixed");
+      }
     } else {
-      header.classList.remove("fixed");
+      header.classList.add("fixed");
     }
+    
 
     detectActiveLink();
     lastScroll = height;

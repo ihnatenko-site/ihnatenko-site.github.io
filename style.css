@@ -63,6 +63,7 @@ body {
   width: 130px;
 }
 
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -118,7 +119,7 @@ body {
 
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 25px;
   z-index: 1;
 }
 
@@ -287,10 +288,17 @@ body {
 }
 
 .intro__logo {
-  opacity: 0;
-  margin: -8px auto;
   width: 130px;
-  display: block;
+  display: none;
+}
+.intro__logo-wrapper {
+  padding-top: 4px;
+  width: 70%;
+  background-color: #000;
+  border-bottom: 4px solid #000;
+
+  position: relative;
+  z-index: 1000;
 }
 
 /* servizi */
@@ -1123,6 +1131,9 @@ body {
   .header.fixed {
     height: 50px;
   }
+  .header > .container {
+    padding: 0;
+  }
   .nav {
     flex-direction: column;
     justify-content: start;
@@ -1203,7 +1214,8 @@ body {
   }
 
   .intro__logo {
-    opacity: 1;
+    display: block;
+    margin-left: 25px;
   }
 
   .storia {
@@ -1290,10 +1302,6 @@ body {
     padding-left: 5px;
   }
 
-  .intro__logo {
-    margin: -4px 0 0 0;
-    width: 112px;
-  }
   .intro__title {
     font-size: 39px;
   }
