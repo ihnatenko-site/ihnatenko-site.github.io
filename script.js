@@ -21,9 +21,11 @@ document.addEventListener("DOMContentLoaded", function () {
     if (burger.classList.contains("active")) {
       burger.classList.remove("active");
       nav.style.left = "-100%";
+      nav.style.opacity = "0";
     } else {
       burger.classList.add("active");
       nav.style.left = "0px";
+      nav.style.opacity = "1";
     }
   });
 
@@ -46,11 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (height > intro) {
       header.classList.add("fixed");
-      /* if (height > lastScroll) {
-            header.classList.remove('fixed');
-        } else {
-            header.classList.add('fixed');
-        } */
     } else {
       header.classList.remove("fixed");
     }
