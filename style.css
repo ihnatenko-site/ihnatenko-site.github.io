@@ -287,9 +287,10 @@ body {
 }
 
 .intro__logo {
-  display: none;
+  opacity: 0;
   margin: -8px auto;
   width: 130px;
+  display: block;
 }
 
 /* servizi */
@@ -591,6 +592,12 @@ body {
 .reviews {
   position: relative;
 }
+.reviews > .container {
+  padding: 0 14px;
+}
+.reviews__item:nth-child(4) {
+  margin-left: 9px;
+}
 .reviews__title {
   margin-bottom: 28px;
 }
@@ -806,12 +813,18 @@ body {
   height: 600px;
   border-radius: 15px;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.15);
+
+  position: relative;
+  z-index: 10;
 }
 
 /* FOOTER */
 .footer {
   margin-top: -265px;
   background-color: #000000;
+
+  position: relative;
+  z-index: 9;
 }
 
 .footer__ineer {
@@ -1024,6 +1037,12 @@ body {
     width: 1003px;
     margin: 0 auto;
   }
+  .reviews > .container {
+    padding: 0 15px;
+  }
+  .reviews__item:nth-child(4) {
+    margin-left: 10px;
+  }
 
   .team__item {
     margin: 0 auto;
@@ -1183,7 +1202,7 @@ body {
   }
 
   .intro__logo {
-    display: block;
+    opacity: 1;
   }
 
   .storia {
