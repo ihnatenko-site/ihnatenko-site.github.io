@@ -391,6 +391,9 @@ body {
   position: relative;
   text-decoration: none;
 }
+.team__item:hover .team__photo {
+  filter: grayscale(1);
+}
 
 .team_name {
   font-family: "Russo One", sans-serif;
@@ -426,6 +429,8 @@ body {
   max-width: 100%;
   height: auto;
   max-height: 500px;
+
+  transition: all .5s linear;
 }
 
 /* STORIA */

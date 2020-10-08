@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function () {
   right.onclick = () => {
     clearInterval(autoClick);
 
-    if (main.offsetWidth > 1003 /* && main.offsetWidth != 1003 */) {
+    if (main.offsetWidth > 1003) {
 
       if (counter < main.offsetWidth+300) {
         position = 0;
@@ -243,7 +243,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     carousel.style.left = position + "px";
 
-    autoClick = setInterval(() => right.onclick(), 5000);
+    autoClick = setInterval(() => right.onclick(), 4000);
   };
 
   left.onclick = () => {
@@ -289,8 +289,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     carousel.style.left = position + "px";
 
-    autoClick = setInterval(() => right.onclick(), 5000);
+    autoClick = setInterval(() => right.onclick(), 4000);
   };
 
-  let autoClick = setInterval(() => right.onclick(), 5000);
+  let autoClick = setInterval(() => right.onclick(), 4000);
 });
