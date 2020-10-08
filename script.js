@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function () {
   right.onclick = () => {
     clearInterval(autoClick);
 
-    if (main.offsetWidth > 702) {
+    if (main.offsetWidth > 1003 /* && main.offsetWidth != 1003 */) {
 
       if (counter < main.offsetWidth+300) {
         position = 0;
@@ -249,8 +249,17 @@ document.addEventListener("DOMContentLoaded", function () {
   left.onclick = () => {
     clearInterval(autoClick);
 
-    if (main.offsetWidth > 402 && main.offsetWidth <= 702) {
 
+    if (main.offsetWidth == 1003) {
+      if (counter > 2385) {
+        position = -1500;
+        counter = main.offsetWidth -10;
+      } else {
+        position += 300;
+        counter += 300;
+      }
+    }
+    else if (main.offsetWidth > 402 && main.offsetWidth <= 702) {
       if (counter > 2385) {
         position = -1800;
         counter = main.offsetWidth -10;
@@ -269,7 +278,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
     else {
-      console.log(counter)
       if (counter > 2365) {
         position = -1200;
         counter = main.offsetWidth -10;

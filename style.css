@@ -434,7 +434,7 @@ body {
   height: 670px;
 }
 
-.storia__inner {
+.storia__wrapper {
   width: 100%;
   height: 490px;
   background: url(/img/storia_bg.jpg) center no-repeat;
@@ -446,11 +446,12 @@ body {
   transform: translateX(-50%);
 }
 
-.storia__description {
+.storia__inner {
   width: 90%;
   max-width: 1180px;
   padding: 55px 100px;
   display: flex;
+  flex-wrap: wrap;
   border-radius: 15px;
   box-shadow: 0 0 31px 0 rgba(0, 0, 0, 0.15);
   background-color: #ffffff;
@@ -460,12 +461,15 @@ body {
   bottom: -125px;
   transform: translateX(-50%);
 }
-
-.storia__description-column {
+.storia__item {
   width: 50%;
 }
-.storia__description-column:nth-child(1) {
-  padding-right: 10px;
+.storia__item:first-child {
+  padding-right: 9px;
+}
+.storia__item:nth-child(2) {
+  padding-top: 10px;
+  padding-left: 9px;
 }
 
 .storia__description-title {
@@ -1083,6 +1087,9 @@ body {
   .storia__description-text {
     font-size: 21px;
   }
+  .storia__item:nth-child(2) {
+    padding-top: 16px;
+  }
 
   .contact::after {
     width: 100%;
@@ -1221,11 +1228,11 @@ body {
   .storia {
     height: 550px;
   }
-  .storia__inner {
+  .storia__wrapper {
     height: 370px;
     top: 50px;
   }
-  .storia__description {
+  .storia__inner {
     padding: 45px 25px;
   }
   .storia__description-title {
@@ -1234,6 +1241,7 @@ body {
   .storia__description-text {
     font-size: 18px;
   }
+ 
 
   .galeria__item.first,
   .galeria__item.second {
@@ -1276,6 +1284,10 @@ body {
   }
   .team__photo {
     max-height: 450px;
+  }
+
+  .storia__inner {
+    padding: 35px 15px;
   }
 
   .contact::after {
@@ -1356,9 +1368,9 @@ body {
     transform: translateX(-50%);
   }
 
-  .storia__description {
+  .storia__inner {
     width: 100%;
-    padding: 12px 10px 15px;
+    padding: 15px 10px;
     border-radius: 0px;
   }
   .storia__description-text {
@@ -1475,12 +1487,26 @@ body {
     font-size: 17px;
   }
 
+  .storia__item {
+    width: 100%;
+}
   .storia__description-title {
     font-size: 20px;
   }
   .storia__description-text {
     font-size: 15px;
   }
+  .storia__item:nth-child(2) {
+    padding-top: 0px;
+    padding-left: 0px;
+}
+.storia__description-text > p {
+  margin-bottom: 12px;
+}
+
+.storia__description-text > .second-p {
+  margin-bottom: 0px;
+}
 
   .contact__number span {
     margin-right: 5px;
