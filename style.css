@@ -438,6 +438,9 @@ body {
   position: relative;
   height: 670px;
 }
+.storia__title {
+  margin-bottom: 28px;
+}
 
 .storia__wrapper {
   width: 100%;
@@ -445,10 +448,10 @@ body {
   background: url(/img/storia_bg.jpg) center no-repeat;
   background-size: cover;
 
-  position: absolute;
+ /*  position: absolute;
   top: 60px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
 
 .storia__inner {
@@ -496,6 +499,7 @@ body {
 /* GALERIA */
 .galeria__title {
   margin-bottom: 28px;
+  margin-top: 190px;
 }
 
 .galeria__inner {
