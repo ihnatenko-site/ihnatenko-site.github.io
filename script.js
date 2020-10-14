@@ -306,6 +306,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       galeriaBtn.textContent = "CLOSE";
 
+     
     } else {
       galeriaInner.classList.remove('open');
       galeriaInner.classList.add('close');

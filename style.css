@@ -544,7 +544,7 @@ body {
   object-position: 50% 28%;
 }
 
-.geleria__btn-wrapper {
+.geleria__btn {
   display: none;
 }
 
@@ -1143,8 +1143,14 @@ body {
     margin: 0 auto;
   }
   .btn:hover {
-    
+    border: 4px solid transparent;
+    background-color: #f3bf1b;
+    color: #000;
   }
+  .btn:hover.btn--prev:before,
+  .btn:hover.btn--next:before {
+    border-color: #000;
+}
   .btn.slider {
     margin: 0;
   }
@@ -1334,9 +1340,9 @@ body {
   .galeria__inner.close {
     height: 875px;
   }
-  .geleria__btn-wrapper {
-    display: block;
-    text-align: center;
+  .geleria__btn {
+    display: table;
+    margin: 0 auto;
   }
 
   .contact__title {
