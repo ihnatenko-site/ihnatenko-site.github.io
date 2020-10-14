@@ -293,4 +293,31 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   let autoClick = setInterval(() => right.onclick(), 4000);
+
+
+  /* GALERIA */
+  const galeriaBtn = document.querySelector('.geleria__btn'),
+        galeriaInner = document.querySelector('.galeria__inner');
+
+  galeriaBtn.addEventListener('click', function () {
+    if (galeriaInner.classList.contains('close')) {
+      galeriaInner.classList.remove('close');
+      galeriaInner.classList.add('open');
+
+      galeriaBtn.textContent = "CLOSE";
+
+    } else {
+      galeriaInner.classList.remove('open');
+      galeriaInner.classList.add('close');
+
+      galeriaBtn.textContent = "SHOW MORE";
+
+      galeria.scrollIntoView({
+        block: "start",
+        behavior: "smooth",
+      });
+    }
+
+  });
+ 
 });
