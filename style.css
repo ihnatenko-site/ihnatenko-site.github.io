@@ -434,6 +434,75 @@ body {
   transition: all .5s linear;
 }
 
+
+/* ESCLUSIVO */
+.esclusivo {
+  overflow-x: hidden;
+}
+.esclusivo__inner {
+  margin: 65px 100px 30px 102px;
+  padding: 53px 100px 43px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  border-radius: 15px;
+  box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.esclusivo__item {
+  width: 49%;
+}
+.esclusivo__item:first-child {
+  margin-right: 15px;
+}
+.esclusivo__item-title {
+  margin-bottom: 20px;
+  color: #F3BF1B;
+  background-color: #000;
+  font-weight: 500;
+  text-align: center;
+}
+.esclusivo__item-text {
+  font-weight: 300;
+}
+
+.velo {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  transform: translateY(-50%);
+
+  display: block;
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+}
+.velo__left {
+  left: -350px;
+}
+.velo__right {
+  right: -350px;
+}
+
+.esclusivo-img {
+  width: 380px;
+  border-radius: 15px;
+  box-shadow: 2px 5px 6px 0 rgba(139, 109, 0, 0.19);
+  object-fit: cover;
+}
+.esclusivo-img.top {
+  margin-bottom: 19px;
+  height: 317px;
+  object-position: 85% 50%;
+}
+.esclusivo-img.bottom {
+  height: 160px;
+  object-position: 50% 50%;
+}
+
+
 /* STORIA */
 .storia {
   position: relative;
