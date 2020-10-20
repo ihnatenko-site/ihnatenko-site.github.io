@@ -1474,6 +1474,10 @@ body {
     width: 100%;
     padding: 15px;
     border-radius: 0px;
+    bottom: -170px;
+  }
+  .storia__wrapper{
+    height: 310px;
   }
 
   .galeria__inner {
@@ -1491,6 +1495,9 @@ body {
   .geleria__btn {
     display: table;
     margin: 0 auto;
+  }
+  .galeria__title {
+    margin-top: 235px;
   }
 
   .contact__title {
