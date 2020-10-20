@@ -395,12 +395,17 @@ body {
 }
 .team__item:hover {
   background-color: #fff;
+  box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.25);
 }
 .team__item:hover .team_name {
   color: #f3bf1b;
 }
+.team__item:hover .team_description {
+  color: #828282;
+}
 
 .team_name {
+  padding-bottom: 50px;
   font-family: "Russo One", sans-serif;
   font-size: 25px;
   color: #828282;
@@ -590,7 +595,7 @@ body {
   font-size: 24px;
   font-weight: 300;
   color: #828282;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 /* GALERIA */
@@ -1451,13 +1456,24 @@ body {
     transform: translateX(-50%);
   }
 
+  .esclusivo > .container {
+    padding: 0;
+  }
+  .esclusivo__item-text {
+    font-size: 18px;
+    margin-top: 16px;
+  }
+  .esclusivo__item-title {
+    font-size: 19px;
+  }
+  .esclusivo__inner {
+    padding: 22px 15px
+  }
+
   .storia__inner {
     width: 100%;
-    padding: 15px 10px;
+    padding: 15px;
     border-radius: 0px;
-  }
-  .storia__description-text {
-    font-size: 16px;
   }
 
   .galeria__inner {
@@ -1565,7 +1581,7 @@ body {
 
   .esclusivo__item-text {
     margin-top: 25px;
-    font-size: 21px;
+    font-size: 17px;
   }
   .esclusivo__inner {
     padding: 25px 15px;
@@ -1581,7 +1597,7 @@ body {
     font-size: 20px;
   }
   .storia__description-text {
-    font-size: 15px;
+    font-size: 17px;
   }
   .storia__item:nth-child(2) {
     padding-top: 0px;
