@@ -1459,6 +1459,9 @@ body {
   .esclusivo > .container {
     padding: 0;
   }
+  .esclusivo__title {
+    margin-left: 10px;
+  }
   .esclusivo__item-text {
     font-size: 18px;
     margin-top: 16px;
