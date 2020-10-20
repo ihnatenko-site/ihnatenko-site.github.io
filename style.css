@@ -391,9 +391,13 @@ body {
 
   position: relative;
   text-decoration: none;
+  transition: all .3s linear;
 }
-.team__item:hover .team__photo {
-  filter: grayscale(1);
+.team__item:hover {
+  background-color: #fff;
+}
+.team__item:hover .team_name {
+  color: #f3bf1b;
 }
 
 .team_name {
@@ -430,8 +434,6 @@ body {
   max-width: 100%;
   height: auto;
   max-height: 500px;
-
-  transition: all .5s linear;
 }
 
 
@@ -440,32 +442,40 @@ body {
   overflow-x: hidden;
 }
 .esclusivo__inner {
-  margin: 65px 100px 30px 102px;
-  padding: 53px 100px 43px;
+  margin: 28px 100px 30px 102px;
+  padding: 65px 100px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 
   border-radius: 15px;
   box-shadow: 0 0 38px 0 rgba(0, 0, 0, 0.15);
   position: relative;
+  z-index: 3;
 }
 
 .esclusivo__item {
   width: 49%;
 }
 .esclusivo__item:first-child {
+  margin-top: 5px;
+}
+.esclusivo__item:first-child {
   margin-right: 15px;
 }
 .esclusivo__item-title {
-  margin-bottom: 20px;
+  padding: 4px 6px;
   color: #F3BF1B;
   background-color: #000;
   font-weight: 500;
   text-align: center;
 }
 .esclusivo__item-text {
+  margin-top: 37px;
   font-weight: 300;
+  color: #828282;
+}
+.esclusivo__item-text > p {
+  margin-bottom: 28px;
 }
 
 .velo {
@@ -485,6 +495,15 @@ body {
 .velo__right {
   right: -350px;
 }
+.velo__number {
+  display: block;
+  color: #F3BF1B;
+  font-weight: 500;
+  transition: all .2s linear;
+}
+.velo__number:hover {
+  color: #000;
+}
 
 .esclusivo-img {
   width: 380px;
@@ -492,14 +511,22 @@ body {
   box-shadow: 2px 5px 6px 0 rgba(139, 109, 0, 0.19);
   object-fit: cover;
 }
+.esclusivo-img-wrapper.top {
+  margin-bottom: 20px;
+}
+
 .esclusivo-img.top {
-  margin-bottom: 19px;
-  height: 317px;
+  height: 353px;
   object-position: 85% 50%;
 }
 .esclusivo-img.bottom {
-  height: 160px;
+  height: 200px;
   object-position: 50% 50%;
+}
+.esclusivo-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 
@@ -1022,6 +1049,7 @@ body {
 }
 /* MEDIA */
 
+
 @media (max-width: 1199.98px) {
   h2 {
     font-size: 30px;
@@ -1061,6 +1089,17 @@ body {
   .slider__nav {
     margin-left: 0;
     justify-content: center;
+  }
+
+  .velo {
+    display: none;
+  }
+  .esclusivo__inner {
+    margin: 28px 80px 30px 80px;
+    padding: 65px 35px;
+  }
+  .esclusivo-img-wrapper {
+    text-align: right;
   }
 
   .reviews__inner {
@@ -1226,6 +1265,30 @@ body {
   .btn--prev.slider {
     margin-right: 30px;
   }
+
+
+  .esclusivo__inner {
+    margin: 28px auto;
+    padding: 35px;
+    flex-wrap: wrap;
+    max-width: 650px;
+  }
+  .esclusivo__item {
+    width: 100%;
+  }
+  .esclusivo__item:first-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+  .esclusivo-img-wrapper {
+    text-align: center;
+  }
+  .esclusivo-img {
+    width: 100%;
+  }
+  .esclusivo__item-text > p {
+    margin-bottom: 15px;
+}
 
 
   .reviews__inner {
@@ -1498,6 +1561,17 @@ body {
   }
   .servizi__text {
     font-size: 17px;
+  }
+
+  .esclusivo__item-text {
+    margin-top: 25px;
+    font-size: 21px;
+  }
+  .esclusivo__inner {
+    padding: 25px 15px;
+  }
+  .esclusivo__item-title {
+    font-size: 19px;
   }
 
   .storia__item {
