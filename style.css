@@ -334,7 +334,8 @@ body {
 
 .servizi__photo {
   display: block;
-  height: 500px;
+  width: 535px;
+  height: 580px;
   object-fit: cover;
   max-width: 100%;
  
@@ -1088,6 +1089,7 @@ body {
     text-align: left;
   }
   .slider__nav {
+    margin-top: 0;
     margin-left: 0;
     justify-content: center;
   }
@@ -1415,9 +1417,7 @@ body {
   .servizi__text {
     font-size: 19px;
   }
-  .slider__nav {
-    margin-top: 35px;
-  }
+ 
 
   .team__title {
     margin-top: 70px;
