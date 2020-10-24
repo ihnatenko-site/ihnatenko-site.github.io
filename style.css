@@ -266,10 +266,9 @@ body {
   margin-top: 90px;
   background: url(img/intro_bg.jpg) no-repeat;
   background-size: cover;
-  background-position: 71%;
 
   width: 100%;
-  height: 630px;
+  height: 780px;
   position: relative;
 
   display: flex;
@@ -320,15 +319,14 @@ body {
 
 .servisi__description {
   width: 55%;
-  padding-left: 100px;
+  padding-left: 40px;
   padding-top: 100px;
   display: flex;
   flex-direction: column;
 }
 
 .servizi__img {
-  width: 45%;
-  max-height: 465px;
+  max-width: 45%;
   overflow: hidden;
   border-radius: 15px;
   cursor: pointer;
@@ -336,10 +334,10 @@ body {
 
 .servizi__photo {
   display: block;
-  width: 530px;
+  height: 500px;
+  object-fit: cover;
   max-width: 100%;
-  height: auto;
-
+ 
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.15);
   transition: 1.2s;
 }
@@ -1070,7 +1068,7 @@ body {
     margin: 0 auto;
   }
   .servizi__img {
-    width: 530px;
+    max-width: 100%;
   }
   .servisi__description {
     width: 530px;
@@ -1234,6 +1232,7 @@ body {
   .intro {
     margin-top: 0px;
     height: 100vh;
+    background-position-y: 50px;
 
     display: block;
     text-align: center;

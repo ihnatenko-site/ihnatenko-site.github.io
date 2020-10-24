@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
     clearInterval(sliderInterval);
   });
 
-  let sliderInterval = setInterval(plusSlide, 4000);
+  let sliderInterval = setInterval(plusSlide, 5000);
 
 
 
