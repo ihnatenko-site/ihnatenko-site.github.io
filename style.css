@@ -611,7 +611,7 @@ body {
 }
 
 .galeria__inner.open {
-  height: 2650px;
+  height: 3420px;
 }
 
 
@@ -1490,16 +1490,19 @@ body {
   }
 
   .galeria__inner {
-    width: 315px;
+    width: 100%;
+  }
+  .galeria__img {
+    height: 550px;
   }
   .galeria__img.small {
-    width: 315px;
+    width: 100%;
   }
   .galeria__img.large {
-    width: 315px;
+    width: 100%;
   }
   .galeria__inner.close {
-    height: 875px;
+    height: 1135px;
   }
   .geleria__btn {
     display: table;
@@ -1677,5 +1680,20 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.slit-in-vertical {
+	        animation: slit-in-vertical .6s ease-out both;
+}
+
+@keyframes slit-in-vertical {
+  0% {
+            transform:  rotateY(120deg);
+            opacity: 0.3;
+  }
+
+  100% {
+            transform:  rotateY(0);
   }
 }

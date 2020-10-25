@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     sliderItem[slideIndex - 1].classList.remove("hidden");
-    sliderItem[slideIndex - 1].classList.add("fade-in");
+    sliderItem[slideIndex - 1].classList.add("slit-in-vertical");
     /*  sliderItem[slideIndex - 1].querySelector('.servizi__img').classList.add('swing-in-top-fwd'); */
   }
 
