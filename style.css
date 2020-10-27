@@ -264,7 +264,7 @@ body {
 /* INTRO */
 .intro {
   margin-top: 90px;
-  background: url(img/intro_bg.jpg) right no-repeat;
+  background: url(img/intro_bg-3.jpg) center no-repeat;
   background-size: cover;
 
   width: 100%;
@@ -1074,7 +1074,7 @@ body {
   }
   .servisi__description {
     width: 530px;
-    height: 200px;
+    height: 180px;
     max-width: 100%;
     padding-left: 0;
     padding-top: 0;
@@ -1228,6 +1228,7 @@ body {
     left: -100%;
     z-index: 999;
     background-color: rgba(243, 191, 27, 1);
+    box-shadow: -6px 14px 10px 9px rgba(0,0,0,0.35);
 
     overflow: hidden;
     -webkit-overflow-scrolling: touch;
@@ -1594,6 +1595,10 @@ body {
 }
 
 @media (max-width: 415px) {
+  .intro__title {
+    font-size: 36px;
+  }
+
   .servizi__name {
     font-size: 21px;
   }
@@ -1646,7 +1651,7 @@ body {
 }
 @-webkit-keyframes fade-in {
   0% {
-    opacity: 1;
+    opacity: 0;
   }
   100% {
     opacity: 1;
@@ -1654,7 +1659,19 @@ body {
 }
 @keyframes fade-in {
   0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
+  }
+}
+
+.fade-out {
+  animation: fade-out 1.2s linear;
+}
+@keyframes fade-out {
+  0% {
+    opacity: .2;
   }
   100% {
     opacity: 1;
