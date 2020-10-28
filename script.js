@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
     storia = document.querySelector(".storia"),
     galeria = document.querySelector(".galeria"),
     reviews = document.querySelector(".reviews"),
-    contact = document.querySelector(".contact");
+    contact = document.querySelector(".contact"),
+    esclusivo = document.querySelector(".esclusivo");
 
   /* BURGER */
 
@@ -70,38 +71,43 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       navLinks[0].classList.add("active");
     }
-    if ((height > offset(team).top - 64) & (height < offset(storia).top)) {
+    if ((height > offset(team).top - 100) & (height < offset(esclusivo).top)) {
       navLinks.forEach((item) => {
         item.classList.remove("active");
       });
       navLinks[1].classList.add("active");
     }
-    if ((height > offset(storia).top - 100) & (height < offset(galeria).top)) {
+    if ((height > offset(esclusivo).top - 100) & (height < offset(storia).top)) {
       navLinks.forEach((item) => {
         item.classList.remove("active");
       });
       navLinks[2].classList.add("active");
     }
-    if ((height > offset(galeria).top - 125) & (height < offset(reviews).top)) {
+    if ((height > offset(storia).top - 100) & (height < offset(galeria).top)) {
       navLinks.forEach((item) => {
         item.classList.remove("active");
       });
       navLinks[3].classList.add("active");
     }
-    if ((height > offset(reviews).top - 65) & (height < offset(contact).top)) {
+    if ((height > offset(galeria).top - 65) & (height < offset(reviews).top)) {
       navLinks.forEach((item) => {
         item.classList.remove("active");
       });
       navLinks[4].classList.add("active");
     }
-    if (height > offset(contact).top - 150) {
+    if ((height > offset(reviews).top - 100) & (height < offset(contact).top)) {
       navLinks.forEach((item) => {
         item.classList.remove("active");
       });
       navLinks[5].classList.add("active");
+    }
+    if (height > offset(contact).top - 120) {
+      navLinks.forEach((item) => {
+        item.classList.remove("active");
+      });
       navLinks[6].classList.add("active");
     }
-
+  
     if (height < offset(servizi).top) {
       navLinks.forEach((item) => {
         item.classList.remove("active");
@@ -202,6 +208,7 @@ document.addEventListener("DOMContentLoaded", function () {
   modal.addEventListener("click", (event) => {
     if (event.target === modal) {
       modal.classList.toggle("show");
+      document.body.style.overflow = "";
     }
   });
 

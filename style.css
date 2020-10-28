@@ -264,7 +264,7 @@ body {
 /* INTRO */
 .intro {
   margin-top: 90px;
-  background: url(img/intro_bg-3.jpg) center no-repeat;
+  background: url(img/intro_bg.jpg) center no-repeat;
   background-size: cover;
 
   width: 100%;
@@ -1643,7 +1643,14 @@ body {
   }
 }
 
-
+@media (max-height: 450px) {
+  .nav {
+    padding-top: 70px;
+  }
+  .nav__link {
+    margin-bottom: 10px;
+  }
+}
 
 .fade-in {
   -webkit-animation: fade-in .9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
