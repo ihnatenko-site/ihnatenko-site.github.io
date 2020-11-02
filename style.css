@@ -1717,7 +1717,7 @@ body {
 }
 
 .rotate {
-	        animation: rotate 2.5s ease-in-out infinite;
+	        animation: rotate 2.7s ease-in-out infinite;
 }
 
 @keyframes rotate {
