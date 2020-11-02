@@ -327,5 +327,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
   });
+
+  const introPrenotare = document.querySelector("#introBtn");
+  setTimeout(function() {
+    introPrenotare.style.display = "table";
+  } , 1400);
  
 });

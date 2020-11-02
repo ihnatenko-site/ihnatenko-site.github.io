@@ -298,6 +298,12 @@ body {
   position: relative;
   z-index: 1000;
 }
+.intro__prenotare {
+  height: 45px;
+}
+#introBtn {
+  display: none;
+}
 
 /* servizi */
 .servizi-slider {
@@ -1661,9 +1667,10 @@ body {
   }
 }
 
+
 .fade-in {
-  -webkit-animation: fade-in .9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  animation: fade-in .9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  -webkit-animation: fade-in 1.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in 1.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 @-webkit-keyframes fade-in {
   0% {
@@ -1681,6 +1688,8 @@ body {
     opacity: 1;
   }
 }
+
+
 
 .fade-out {
   animation: fade-out 1.2s linear;
@@ -1716,10 +1725,10 @@ body {
   }
 }
 
+
 .rotate {
 	        animation: rotate 2.7s ease-in-out infinite;
 }
-
 @keyframes rotate {
   0% {
             transform:  rotateZ(0deg);
