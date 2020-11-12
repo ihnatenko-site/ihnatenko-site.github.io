@@ -232,11 +232,6 @@ body {
     height: 20px;
     border: 5px solid #000;
     border-radius: 6px;
-  /* position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0) rotate(45deg);
-    z-index: 2; */
     transform: rotate(45deg);
     transition: all 0.3s linear;
 }
@@ -253,16 +248,6 @@ body {
     margin-right: 10px;
 }
 
-/* .slider__nav > .btn--prev {
-    position: absolute;
-    top: -40px;
-    left: -50px;
-}
-.slider__nav > .btn--next {
-    position: absolute;
-    top: -40px;
-    right: -50px;
-} */
 /* INTRO */
 .intro {
     margin-top: 90px;
@@ -578,10 +563,6 @@ body {
     height: 490px;
     background: url(/img/storia_bg.jpg) center no-repeat;
     background-size: cover;
-  /*  position: absolute;
-  top: 60px;
-  left: 50%;
-  transform: translateX(-50%); */
 }
 
 .storia__inner {
@@ -648,7 +629,6 @@ body {
 
 .galeria__item {
     margin-bottom: 20px;
-  /* box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.15); */
     border-radius: 15px;
     background-color: #fff;
     overflow: hidden;
@@ -844,7 +824,6 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  /* position: relative; */
     display: flex;
     align-items: center;
 }
