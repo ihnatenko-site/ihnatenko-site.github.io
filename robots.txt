@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://wonderful-barbershop.com/sitemap.xml
+Host: wonderful-barbershop.com
