@@ -434,6 +434,10 @@ body {
     max-height: 372px;
 }
 
+.team__photo.giuseppe {
+    max-height: 364px;
+}
+
 /* ESCLUSIVO */
 .esclusivo {
     overflow-x: hidden;
